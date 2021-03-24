@@ -1,0 +1,155 @@
+.inner_container.box.flex_container
+  align-items: flex-start
+.red
+  color: $redcolor
+.home_seccion_productos
+  width: 100%
+  margin: auto
+  position: relative
+  display: grid
+  grid-template-columns: 1fr 1fr 1fr
+  grid-gap: 40px
+  padding: 12px 0
+  border-radius: 6px
+  margin-bottom: 40px
+  text-align: center
+  p
+    text-align: left
+  img
+    border-radius: 6px
+    width: 100%
+    background-color: #FF7045
+.back_grey
+  background-color: #EEEEEE
+.back_white
+  background-color: $white
+.product_price_item
+  padding: 15px
+  border-radius: 6px
+.forms_container
+  width: 100%
+.home_grey_section_products h2
+  line-height: 1.4em
+  font-size: 1.7em
+  color: #707070
+  text-transform: uppercase
+  font-weight: 900
+.home_grey_section_precios h2
+  line-height: 1.4em
+  font-size: 1.7em
+  color: $white
+  text-transform: uppercase
+  font-weight: 900
+.products_title
+  width: 100%
+  margin: 20px 0 10px
+  font-weight: 700
+  text-align: left
+  font-size: 1.4em
+.home_grey_section_precios
+  text-align: center
+.info_precios
+  padding: 15px
+.price_title
+  font-weight: 800
+  color: #707070
+  font-size: 1.3em
+  margin-bottom: 0
+.price_details
+  font-size: .7em
+  margin-top: 0
+  color: #707070
+  line-height: 1
+  margin-bottom: 15px
+.price_price
+  font-size: 1.9em
+  font-weight: 900
+  sup
+    font-size: .4em
+    top: -0.9em
+  span
+    font-size: .4em
+    color: #D1D1D1
+    font-weight: 400
+.price_bottom_area
+  width: 100%
+.text_pba1
+  font-size: .8em
+  font-weight: 800
+  line-height: 1
+  margin: 10px 0 8px 0
+.text_pba2
+  font-size: .8em
+  font-weight: 300
+  line-height: 1
+  margin: 0 0 10px 0
+.bottom_btn
+  width: 100%
+  padding: 8px
+  color: #FF7212
+  background-color: transparent
+  font-size: .8em
+  text-transform: uppercase
+  border: 1px solid #FF7212
+  display: block
+  border-radius: 4px
+  margin-top: 20px
+  font-weight: 800
+.btn_fill
+  background-color: #FF7212
+  color: $white
+.bottom_btn:hover
+  background-color: #FF7212
+  color: $white
+.btn_fill:hover
+  background-color: transparent
+  color: #FF7212
+.most_value
+  position: absolute
+  //background-color: #FFE752
+  color: $black
+  text-transform: uppercase
+  font-size: .8em
+  font-weight: 700
+  top: 5px
+  padding: 3px 15px
+  background-image: url(../img/label_y.svg)
+  background-size: 100%
+  background-position: center
+  background-repeat: no-repeat
+button.button_flat
+  background-color: transparent
+  background-image: none
+  color: $labelcolor
+  padding: 8px 0
+
+@media (min-width: $screen-xxl-dsk)
+
+@media (max-width: $screen-xl-min)
+
+
+@media (max-width: $screen-sm-dsk)
+
+
+@media (max-width: $screen-lg-min)
+  .forms_container
+    .home_seccion_productos
+      grid-template-columns: 1fr 1fr
+
+@media (max-width: $screen-md-min)
+
+
+@media (max-width: $screen-sm-min)
+  .forms_container
+    .home_seccion_productos
+      grid-template-columns: 1fr
+  button.button_flat
+    padding-top: 0
+
+@media (max-width: $screen-xsm-min)
+  .btns_wrapper
+    button:last-child
+      margin-right: 0
+      font-size: .8em
+
+@media (max-width: $screen-xxsm-min)

@@ -1,0 +1,722 @@
+.forms_container
+  min-height: calc(100vh - 137px)
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  position: relative
+.main_container_bck
+  background-color: $backgroundcolor
+button.form_submit_button
+  margin-top: 20px
+  margin-bottom: 20px
+.form_center_wrapper
+  position: relative
+  text-align: center
+  h1
+    font-weight: 300
+    text-align: center
+    font-size: 1.7em
+.form_center_wrapper
+  .contact_form
+    background-color: $white
+    border-radius: 12px
+    padding: 20px
+    min-width: 360px
+    max-width: 360px
+//CONTACT FORM
+.contact-form
+  text-align: center
+.contact-form.row
+  margin: 40px 0
+.form-wrapper
+  padding: 50px 30px 50px 30px
+  background-color: transparent
+  border-radius: 5px
+.form-group
+  margin-bottom: 7px
+  position: relative
+  & + .form-group
+    margin-top: 20px
+  select
+    width: 100%
+    border-radius: 8px
+    padding: 8px
+    border: 1px solid $buttonsgrey
+    -moz-appearance: none
+    -webkit-appearance: none
+    appearance: none
+    background-image: url(../img/icon_select_arrow.svg)
+    background-repeat: no-repeat
+    background-position: 96% 50%
+    font-weight: 600
+  textarea, input[type=text]
+    width: 100%
+    border-radius: 8px
+    //padding: 8px
+    border: 1px solid $buttonsgrey
+    font-weight: 600
+.form-label
+  position: absolute
+  left: 12px
+  top: 11px
+  color: $labelcolor
+  background-color: transparent
+  z-index: 10
+  transition: transform 150ms ease-out, font-size 150ms ease-out
+  font-size: .9em
+  font-weight: 600
+.focused .form-label
+  transform: translateY(-37%)
+  font-size: .65em
+  color: $labelcolor
+.form-input
+  position: relative
+  padding: 20px 0px 5px 12px
+  width: 100%
+  outline: 0
+  border: 1px solid $buttonsgrey
+  border-radius: 8px
+  background-color: transparent
+  font-weight: 600
+  transition: box-shadow 150ms ease-out
+  &:focus
+    box-shadow: 0 1px 0 0 $buttonsgrey
+.form-input.filled
+  box-shadow: 0 1px 0 0 $buttonsgrey
+#message
+  height: 120px
+.btn.send-btn
+  border: none
+  border-radius: 0
+  background-color: $orange
+  display: inline-block
+  letter-spacing: .05em
+  color: #fff
+  position: relative
+  margin: 0 auto
+  white-space: nowrap
+  -webkit-transition: color .3s
+  transition: color .3s
+  cursor: pointer
+  margin-top: 30px
+  padding: 12px 40px
+  -webkit-transform: translateZ(0)
+  transform: translateZ(0)
+  width: 100%
+  text-align: center
+  text-transform: uppercase
+  font-size: .9em
+@media screen and (min-width: 769px)
+  .home-contact-img
+    display: block
+  .home-contact-form
+    width: 66.66666666%
+  .contact-us p
+    color: #000
+    max-width: 80%
+button.btn_fw
+  width: 100%
+  max-width: 100%
+  margin: 20px 0
+button.btn_disable
+  pointer-events: none
+  cursor: not-allowed
+  opacity: 0.5
+.middle_title
+  font-weight: 400
+  font-size: .8em
+  margin: 12px 0
+  color: $labelcolor
+  line-height: 1.4em
+  -webkit-transition: all 400ms cubic-bezier(0.7, 0, 0.3, 1) 0ms
+  -moz-transition: all 400ms cubic-bezier(0.7, 0, 0.3, 1) 0ms
+  transition: all 400ms cubic-bezier(0.7, 0, 0.3, 1) 0ms
+.btns_wrapper
+  img
+    width: 120px
+.container_checkbox
+  display: block
+  position: relative
+  padding-left: 35px
+  margin-bottom: 12px
+  cursor: pointer
+  line-height: 1.8em
+  text-align: left
+  -webkit-user-select: none
+  -moz-user-select: none
+  -ms-user-select: none
+  user-select: none
+.container_checkbox input
+  position: absolute
+  opacity: 0
+  cursor: pointer
+  height: 0
+  width: 0
+.checkmark
+  position: absolute
+  top: 0
+  left: 0
+  height: 25px
+  width: 25px
+  background-color: #fff
+  border-radius: 5px
+  border: 1px solid #D1D1D1
+.container_checkbox:hover input ~ .checkmark
+  background-color: #fff
+.checkmark:after
+  content: ""
+  position: absolute
+  display: none
+.container_checkbox input:checked ~ .checkmark:after
+  display: block
+.container_checkbox input:checked ~ .checkmark
+  background-color: #fff
+.container_checkbox .checkmark:after
+  left: 8px
+  top: 3px
+  width: 5px
+  height: 10px
+  border: solid #6EC4A2
+  border-width: 0 3px 3px 0
+  -webkit-transform: rotate(45deg)
+  -ms-transform: rotate(45deg)
+  transform: rotate(45deg)
+.alt_pad
+  padding: 8px
+//SLIDE RADIO BUTTONS
+.section_slide_radio
+  border-radius: 5px
+  background-color: $white
+  display: flex
+  flex-direction: column
+  align-items: center
+  border: 1px solid #D1D1D1
+  border-radius: 8px
+  .radio-buttons
+    position: relative
+    background: rgba(0, 0, 0, 0)
+    border-radius: 50px
+    margin: 1em
+    padding: 0
+    height: 1.5em
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    align-items: center
+    width: 90%
+    input[type="radio"]
+      display: none
+    label
+      cursor: pointer
+      z-index: 1
+      padding: 0
+      width: 50%
+      color: $labelcolor
+      text-align: center
+      font-size: .9em
+    .slider
+      position: absolute
+      width: 49%
+      height: 35px
+      border-radius: 8px
+      transition: all 0.4s ease
+    .first
+      &:checked ~ .slider
+        background: $labelcolor
+        left: 0
+    .second
+      &:checked ~ .slider
+        background: $labelcolor
+        color: $white
+        left: 144px
+    .second:checked + label
+      color: $white
+    .first:checked + label
+      color: $white
+.icon_eye
+  position: absolute
+  z-index: 1
+  right: 18px
+  width: 15px
+  height: 15px
+  top: 17px
+  cursor: pointer
+  background-image: url(../img/icon-eye-closed.png)
+  background-position: center
+  background-size: 15px
+  background-repeat: no-repeat
+.showPss
+  background-image: url(../img/icon-eye-open.png)
+.title_red
+  color: $alert
+.alert
+  height: 0
+  overflow: hidden
+  -webkit-transition: all 400ms cubic-bezier(0.7, 0, 0.3, 1) 0ms
+  -moz-transition: all 400ms cubic-bezier(0.7, 0, 0.3, 1) 0ms
+  transition: all 400ms cubic-bezier(0.7, 0, 0.3, 1) 0ms
+.get_back_link
+  text-decoration: underline
+  font-size: .8em
+  margin-top: 0
+  a
+    color: $labelcolor
+.wrong_input
+  border: 1px solid $orange
+.my_tooltip
+  background-color: $orange
+  position: absolute
+  right: 15px
+  top: -35px
+  color: #fff
+  font-size: .8em
+  padding: 0 11px
+  border-radius: 7px
+.my_tooltip::after
+  content: ''
+  background-image: url(../img/small_triangle.svg)
+  background-repeat: no-repeat
+  background-size: 10px
+  width: 12px
+  height: 12px
+  display: block
+  top: 27px
+  position: absolute
+  right: 10px
+button.button_flat
+  background-color: transparent
+  background-image: none
+  color: $orange
+  padding: 8px 0
+.update_data_btns
+  display: flex
+  flex-direction: row
+  align-items: center
+  justify-content: space-between
+.update_data_btns
+  button.main_button
+    width: 48%
+    margin-bottom: 0
+.update_data_btns .autorizante_btn.main_button
+  width: 100%
+  max-width: 100%
+  background-color: #FF7045
+  background-image: linear-gradient(100deg, #ef5c30 50%, #FF7045 50%)
+  color: $white
+.update_data_btns + button
+  width: 95%
+  max-width: 95%
+.clientes_head_buttons
+  display: flex
+  flex-direction: row
+  align-items: center
+  justify-content: space-between
+.header_text
+  font-weight: 600
+.clientes_head_buttons
+  button
+    margin: 20px 0
+//HEADER NEW SELECT
+.right_buttons
+  display: flex
+  flex-direction: row
+.custom-select
+  position: relative
+  display: flex
+  padding: 20px 0
+  margin-right: 30px
+.custom-select
+  select
+    display: none
+.select-selected
+  background-color: #FFFFFF
+  width: 200px
+  color: #4A4A4A
+  text-align: center
+  line-height: 43px
+  border-radius: 120px
+  cursor: pointer
+  text-overflow: ellipsis
+  overflow: hidden
+  white-space: nowrap
+  padding: 0 18px
+.table_ejecutivo
+  text-overflow: ellipsis
+  overflow: hidden
+  white-space: nowrap
+.select-selected:after
+  position: absolute
+  content: ""
+  top: 39px
+  right: 11px
+  width: 0
+  height: 0
+  border: 6px solid transparent
+  border-color: #4a4a4a transparent transparent transparent
+.select-selected.select-arrow-active:after
+  border-color: transparent transparent #4a4a4a transparent
+  top: 32px
+.select-items
+  div
+    color: #ffffff
+    padding: 8px 16px
+    border: 1px solid transparent
+    border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent
+    cursor: pointer
+  .select-selected
+    color: #ffffff
+    padding: 8px 16px
+    border: 1px solid transparent
+    border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent
+    cursor: pointer
+.select-items
+  position: absolute
+  background-color: #4A4A4A
+  top: 64px
+  left: 0
+  right: 0
+  z-index: 99
+  border-radius: 12px 12px
+  max-height: 320px
+  overflow: auto
+.select-hide
+  display: none
+
+.select-items
+  div:hover
+    background-color: rgba(0, 0, 0, 0.1)
+    background-color: #707070
+    border-radius: 120px
+  .same-as-selected
+    background-color: rgba(0, 0, 0, 0.1)
+
+.message_screen
+  .form_center_wrapper
+    max-width: 400px
+    text-align: center
+    color: $labelcolor
+    img
+      margin: auto
+.tables_container
+  margin-bottom: 2rem
+.tables_container
+  table
+    border: 1px solid #ccc
+    border-collapse: collapse
+    margin: 0
+    padding: 0
+    width: 100%
+    table-layout: fixed
+    thead
+      color: $white
+      tr
+        background-color: $labelcolor
+    tbody
+      tr
+        td
+          text-overflow: ellipsis
+          overflow: hidden
+          white-space: nowrap
+          display: inline-block
+  table caption
+    font-size: 1.5em
+    margin: .5em 0 .75em
+  table tr
+    background-color: #f8f8f8
+    border: 1px solid #ddd
+    padding: .35em
+    font-size: .85em
+    display: inline-table
+    width: 100%
+  table tr:nth-child(even)
+    background-color: $tabledark
+  table th, table td
+    padding: .625em
+    text-align: left
+  table th
+    font-size: .85em
+    letter-spacing: .1em
+    text-transform: uppercase
+  @media screen and (max-width: 1266px)
+    table
+      border: 0
+    table caption
+      font-size: 1.3em
+    table thead
+      border: none
+      clip: rect(0 0 0 0)
+      height: 1px
+      margin: -1px
+      overflow: hidden
+      padding: 0
+      position: absolute
+      width: 1px
+    table tr
+      border-bottom: 3px solid #ddd
+      display: block
+      margin-bottom: .625em
+    table td
+      border-bottom: 1px solid #ddd
+      display: block
+      font-size: .8em
+      text-align: right
+    table td::before
+      content: attr(data-label)
+      float: left
+      font-weight: bold
+      text-transform: uppercase
+    table td:last-child
+      border-bottom: 0
+.icons_table_wrapper
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  .table_icons
+    width: 25px
+    height: 25px
+    background-color: $darkcolor
+    border-radius: 4px
+    cursor: pointer
+    -webkit-transition: none
+    -moz-transition: none
+    transition: none
+    img
+      width: 14px
+      margin: auto
+      margin-top: 5px
+    span
+      display: none
+
+.icons_table_wrapper
+  .chech_icon
+    img
+      margin-top: 7px
+.status_dot
+  width: 10px
+  height: 10px
+  border-radius: 120px
+  display: inline-block
+  background-color: red
+  margin-right: 8px
+.yellow_dot
+  background-color: #F0C85B
+.grey_dot
+  background-color: #4A4A4A
+.green_dot
+  background-color: #6EC4A2
+.red_dot
+  background-color: #ff0000
+.icons_table_wrapper
+  .table_icons.grey_bck
+    background-color: #bfbfbf
+    -webkit-transition: none
+    -moz-transition: none
+    transition: none
+
+@media screen and (min-width: 1266px)
+  .tables_container
+    table
+      border: 1px solid #ccc
+      border-collapse: collapse
+      margin: 0
+      padding: 0
+      width: 100%
+      table-layout: fixed
+      thead
+        color: $white
+        tr
+          background-color: $labelcolor
+          th:nth-child(1)
+            width: 220px
+          th:nth-child(2)
+            width: 215px
+          th:nth-child(3)
+            width: 120px
+          th:nth-child(4)
+            width: 120px
+          th:nth-child(5)
+            width: 175px
+          th:nth-child(6)
+            width: 175px
+          th:nth-child(7)
+            width: 155px
+      tbody
+        tr
+          td:nth-child(1)
+            width: 220px
+          td:nth-child(2)
+            width: 215px
+          td:nth-child(3)
+            width: 120px
+          td:nth-child(4)
+            width: 120px
+          td:nth-child(5)
+            width: 175px
+          td:nth-child(6)
+            width: 175px
+          td:nth-child(7)
+            width: 155px
+  .listado_autorizante.tables_container
+    table
+      thead
+        tr
+          background-color: $labelcolor
+          th:nth-child(1)
+            width: 220px
+          th:nth-child(2)
+            width: 260px
+          th:nth-child(3)
+            width: 120px
+          th:nth-child(4)
+            width: 120px
+          th:nth-child(5)
+            width: 190px
+          th:nth-child(6)
+            width: 190px
+          th:nth-child(7)
+            width: 80px
+      tbody
+        tr
+          td:nth-child(1)
+            width: 220px
+          td:nth-child(2)
+            width: 260px
+          td:nth-child(3)
+            width: 120px
+          td:nth-child(4)
+            width: 120px
+          td:nth-child(5)
+            width: 190px
+          td:nth-child(6)
+            width: 190px
+          td:nth-child(7)
+            width: 80px
+
+
+@media (min-width: $screen-xxl-dsk)
+
+
+@media (max-width: 1265px)
+  .icons_table_wrapper
+      justify-content: space-between
+      .chech_icon
+        img
+          margin-top: 8px !important
+      .disable_icon
+        img
+          margin-top: 6px !important
+          margin-left: 7px !important
+          width: 12px
+      .edit_icon
+        img
+          margin-top: 5px !important
+      .table_icons
+        margin: 0 7px
+        display: flex
+        flex-direction: column
+        align-items: center
+        position: relative
+        img
+          display: block
+          margin-top: 6px
+          margin-left: 6px
+        span
+          line-height: 1
+          text-align: center
+          padding-left: 0
+          display: block
+          font-size: .9em
+          margin-top: 12px
+  .tables_container
+    table
+      td:last-child
+        height: 60px
+        padding: 0.623em 2em
+  .tables_container
+    table
+      tbody
+        tr
+          td
+            display: block
+          td.table_ejecutivo
+            padding: 0.625em
+            height: auto
+
+@media (max-width: $screen-sm-dsk)
+
+
+@media (max-width: $screen-lg-min)
+
+
+@media (max-width: $screen-md-min)
+  .dashboard
+    .header_cont_buttons > p
+      display: inline-block
+      padding-right: 10px
+  .dashboard
+    .btns_wrapper
+      .main_button.orange
+        display: inline-block
+        margin: 0 8px
+  .dashboard
+    .logout
+      span
+        display: none
+  .dashboard
+    .btns_wrapper
+      padding: 0 0 0 0
+      display: flex
+      align-items: center
+  .dashboard
+    .btns_wrapper
+      button:last-child
+        width: 40px
+        height: 40px
+        display: inline-block
+        line-height: 1
+        padding: 0
+        text-indent: -9999999999999999px
+        white-space: nowrap
+        overflow: hidden
+        background-image: url(../img/icon_logout.svg)
+        background-repeat: no-repeat
+        background-size: 20px
+        background-position: 60% 50%
+        margin-left: 3px
+  .right_buttons
+    flex-direction: column
+  .custom-select
+    padding: 10px 0
+    margin-right: 0
+  .clientes_head_buttons
+    button
+      margin: 10px 0
+  .select-selected:after
+    top: 28px
+  .select-selected.select-arrow-active:after
+    top: 22px
+  .select-items
+    top: 54px
+  .clientes_head_buttons
+    flex-direction: column
+
+
+@media (max-width: $screen-sm-min)
+  .message_screen
+    .form_center_wrapper
+      margin-top: 20px
+
+@media (max-width: $screen-xsm-min)
+
+
+@media (max-width: $screen-xxsm-min)
+  .form_center_wrapper .contact_form
+    min-width: 300px
+    max-width: 300px
+  .form-label
+    font-size: 0.79em
+  .section_slide_radio .radio-buttons label
+    font-size: .8em
+  .section_slide_radio .radio-buttons .second:checked ~ .slider
+    left: 121px

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="38.54" height="39.92" viewBox="0 0 38.54 39.92">
+  <g id="logo-pyme" transform="translate(-16.278 -14.102)">
+    <g id="Grupo_2518" data-name="Grupo 2518" transform="translate(16.278 14.102)">
+      <path id="Trazado_2054" data-name="Trazado 2054" d="M78.24,81.474V64.82h5.184a8.423,8.423,0,0,1,5.467,1.572,6.15,6.15,0,0,1,0,8.92,8.438,8.438,0,0,1-5.467,1.569h-1.5v4.592Zm4.8-13.465H81.926V73.7h1.118a5.474,5.474,0,0,0,3.1-.683,2.912,2.912,0,0,0,0-4.328A5.576,5.576,0,0,0,83.044,68.009Z" transform="translate(-78.24 -64.82)" fill="#009dd6"/>
+      <path id="Trazado_2055" data-name="Trazado 2055" d="M186.463,81.474V74.455L180.7,64.82h4.043l3.645,6.59,3.565-6.59H195.9l-5.756,9.635v7.018Z" transform="translate(-157.361 -64.82)" fill="#7849b8"/>
+      <path id="Trazado_2056" data-name="Trazado 2056" d="M191.14,183.594V166.94h10.588v3.237h-6.9v3.305h5.948v3.237h-5.948v3.645h7.018V183.6Z" transform="translate(-165.423 -143.678)" fill="#fb6330"/>
+      <path id="Trazado_2057" data-name="Trazado 2057" d="M78.24,183.594V166.94H80.9l5.877,9.089,5.852-9.089H95.3v16.654H91.7v-9.3L87.732,180.5h-1.9l-3.973-6.184v9.278Z" transform="translate(-78.24 -143.678)" fill="#ec111a"/>
+    </g>
+  </g>
+</svg>

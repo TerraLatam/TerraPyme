@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="108.246" height="32" viewBox="0 0 108.246 32">
+  <g id="Grupo_2262" data-name="Grupo 2262" transform="translate(-516.754 -166)">
+    <path id="Rectángulo_1844" data-name="Rectángulo 1844" d="M0,0H98a0,0,0,0,1,0,0V27a5,5,0,0,1-5,5H5a5,5,0,0,1-5-5V0A0,0,0,0,1,0,0Z" transform="translate(522 166)" fill="#ffe752"/>
+    <path id="Trazado_1742" data-name="Trazado 1742" d="M20099.855-8215.7l-5.246,6h5.246Z" transform="translate(-19577.855 8381.696)" fill="#b09800"/>
+    <path id="Trazado_1744" data-name="Trazado 1744" d="M20094.609-8215.7l5.246,6h-5.246Z" transform="translate(-19474.855 8381.696)" fill="#b09800"/>
+    <text id="MEJOR_VALOR" data-name="MEJOR VALOR" transform="translate(570.416 186)" fill="#4a4a4a" font-size="10" font-family="RubrikEdgeNew-Bold, Rubrik Edge New" font-weight="700"><tspan x="-35.65" y="0">MEJOR VALOR</tspan></text>
+  </g>
+</svg>
