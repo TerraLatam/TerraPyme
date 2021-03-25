@@ -1,0 +1,539 @@
+*
+  -webkit-transition: all 400ms cubic-bezier(0.7, 0, 0.3, 1) 0ms
+  -moz-transition: all 400ms cubic-bezier(0.7, 0, 0.3, 1) 0ms
+  transition: all 400ms cubic-bezier(0.7, 0, 0.3, 1) 0ms
+body
+  color: $darkcolor
+body.lightbox_opened
+  overflow: hidden
+::placeholder
+  color: $buttonsgrey
+  font-size: .9em
+  font-style: italic
+  line-height: 1.2em
+h2
+  font-weight: 400
+header
+  background-color: $white
+  border-bottom: 1px solid $shadow
+  box-shadow: 0px 0px 8px 0px rgba(100, 100, 100, 0.2)
+.header_content
+  display: flex
+  position: relative
+  flex-direction: row
+  align-items: center
+  justify-content: space-between
+  height: 96px
+.header_cont_logo
+  text-align: left
+  figure
+    margin: 0
+    padding: 0
+    img
+      width: 125px
+      height: auto
+      padding: 1em 0
+.header_cont_buttons
+  text-align: right
+  display: flex
+  flex-direction: row
+  align-items: center
+  p
+    padding-right: 25px
+    border-right: 1px solid $buttonsgrey
+    a
+      color: #4A4A4A
+.btns_wrapper
+  padding: 0 0 0 20px
+  button:last-child
+    margin-right: 0
+.webmail_icon
+  height: 44px
+  margin-left: 25px
+  img
+    height: 44px
+    width: auto
+    opacity: .5
+.main_button
+  border-radius: 80px
+  padding: 8px 30px
+  border: none
+  color: $white
+  margin: 0 .6785rem
+  cursor: pointer
+  position: relative
+  max-width: 190px
+  will-change: background-position
+  background-size: 210% 100%
+  background-position: 99% center
+  background-repeat: no-repeat
+  -webkit-transition: background-position 0.66667s cubic-bezier(0.24, 0.22, 0.31, 1.07)
+  transition: background-position 0.66667s cubic-bezier(0.24, 0.22, 0.31, 1.07)
+.main_button:hover
+  background-position: 0 center
+.orange
+  background-color: $orange
+  background-image: linear-gradient(100deg, #ef5c30 50%, $orange 50%)
+.darkgrey
+  background-color: $darkcolor
+  background-image: linear-gradient(100deg, #313131 50%, $darkcolor 50%)
+.outlined_btn
+  background-color: transparent
+  background-image: linear-gradient(100deg, $orange 50%, rgba(0,0,0,0) 50%)
+  border: 1px solid $orange
+  color: $orange
+.outlined_btn:hover
+  color: $white
+.logout
+  span
+    width: 26px
+    height: 26px
+    border-radius: 50px
+    background-color: #FFFFFF
+    color: #FF7045
+    text-align: center
+    line-height: 1
+    text-transform: uppercase
+    margin-left: -25px
+    margin-right: 15px
+    padding: 6px
+//SLIDES
+.main_slide_content
+  align-items: flex-end
+  padding: 5rem 40px
+  position: relative
+  z-index: 1
+  text-align: right
+  h1
+    color: $white
+    font-weight: 300
+    font-size: 2.4em
+    line-height: 1.2
+    margin-top: 0.2em
+.home_slide1
+  background-image: url(../img/header_background.jpg)
+  background-position: center
+  background-repeat: no-repeat
+  background-size: cover
+.slider_wrapper::after
+  content: ''
+  width: 100%
+  position: absolute
+  top: 0
+  bottom: 0
+  left: 0
+  right: 0
+  background: rgb(0,0,0)
+  background: linear-gradient(45deg, rgba(0,0,0,0.2) 29%, rgba(0,0,0,0.8) 84%)
+.sub_title_slide
+  color: $orange
+  text-transform: uppercase
+  font-size: 1.3333em
+  margin: 0
+.scb_logo
+  position: absolute
+  left: 40px
+  bottom: 0
+  padding: 15px 30px
+  background-color: $white
+  border-radius: 5px 5px 0 0
+  margin: 0
+  img
+    width: 112px
+//HOME MAIN
+.home_white_section
+  background-color: $white
+.home_grey_section
+  background-color: $backgrey
+.percent_60
+  margin: auto
+.home_white_section
+  h2
+    line-height: 1.4em
+    font-size: 1.7em
+    span
+      color: $white
+      background-color: $orange
+.inner_cont_item_slide
+  text-align: center
+  position: relative
+  padding: 15px
+  margin: 10px
+.inner_cont_item_slide img
+  max-width: 100px
+  width: 100px
+  margin: auto
+.slide_title
+  font-size: 1.2em
+  margin-bottom: 0
+  margin-top: .5em
+  line-height: 1.2em
+  display: -webkit-box
+  max-width: 100%
+  -webkit-line-clamp: 1
+  -webkit-box-orient: vertical
+  overflow: hidden
+  color: $orange
+.slide_text
+  font-size: 0.8em
+  line-height: 1.4em
+.slide_product_code
+  color: $darkcolor
+  margin-bottom: 18em
+.slick-dots li.slick-active button:before
+  color: $orange
+
+.home_grey_section
+  h2
+    line-height: 1.4em
+    font-size: 1.7em
+    color: $orange
+    text-transform: uppercase
+    font-weight: 900
+.home_grey_section::after
+  content: ""
+  display: block
+  position: absolute
+  top: 0
+  background-image: url(../img/triangle.gif)
+  width: 100%
+  height: 34px
+  background-color: white
+.home_grey_section::before
+  content: ""
+  display: block
+  position: absolute
+  bottom: 0
+  background-image: url(../img/triangle_middle_grey.png)
+  width: 100%
+  height: 34px
+  background-color: transparent
+.home_grey_section_products::before
+  content: ""
+  display: block
+  position: absolute
+  bottom: 0
+  background-image: url(../img/triangle_dark_grey.png)
+  width: 100%
+  height: 34px
+  background-color: transparent
+.home_grey_section_products
+  background-color: #D1D1D1
+.home_grey_section_precios
+  background-color: #707070
+.funciona_section
+  display: flex
+  position: relative
+  flex-direction: row
+  align-items: center
+.numbers_footer
+  font-weight: 400
+  font-size: 2em
+  color: $darkcolor
+  background-color: transparent
+  width: 60px
+  height: 60px
+  border-radius: 120px
+  border: 1px solid $orange
+  text-align: center
+  padding: 10px
+  line-height: 1
+.title_footer_section
+  font-weight: 600
+  font-size: 1.7em
+  text-align: left
+  margin: 0 0 10px 0
+.p_footer_section
+  text-align: left
+  font-size: 1.1em
+  font-weight: 400
+  margin: 0
+.numbers_wrapper
+  display: flex
+  position: relative
+  flex-direction: row
+  align-items: center
+  padding: 35px
+.footer_info_content_wrapper
+  padding-left: 20px
+  width: 70%
+
+.home_seccion_productos
+  width: 70%
+  margin: auto
+  position: relative
+  display: grid
+  grid-template-columns: 1fr 1fr
+  grid-gap: 40px
+  padding: 12px
+  border-radius: 6px
+  margin-bottom: 40px
+  p
+    text-align: left
+  img
+    border-radius: 6px
+    width: 100%
+    background-color: #FF7045
+.back_grey
+  background-color: #EEEEEE
+.back_white
+  background-color: $white
+.product_price_item
+  padding: 15px
+  border-radius: 6px
+.home_grey_section_products h2
+  line-height: 1.4em
+  font-size: 1.7em
+  color: #707070
+  text-transform: uppercase
+  font-weight: 900
+.home_grey_section_precios h2
+  line-height: 1.4em
+  font-size: 1.7em
+  color: $white
+  text-transform: uppercase
+  font-weight: 900
+.products_title
+  width: 100%
+  margin: 20px 0 10px
+  font-weight: 700
+  text-align: left
+  font-size: 1.4em
+.home_grey_section_precios
+  text-align: center
+.info_precios
+  padding: 15px
+.price_title
+  font-weight: 800
+  color: #707070
+  font-size: 1.3em
+  margin-bottom: 0
+.price_details
+  font-size: .7em
+  margin-top: 0
+  color: #707070
+  line-height: 1
+  margin-bottom: 15px
+.price_price
+  font-size: 1.9em
+  font-weight: 900
+  sup
+    font-size: .4em
+    top: -0.9em
+  span
+    font-size: .4em
+    color: #D1D1D1
+    font-weight: 400
+.price_bottom_area
+  width: 100%
+.text_pba1
+  font-size: .8em
+  font-weight: 800
+  line-height: 1
+  margin: 10px 0 8px 0
+.text_pba2
+  font-size: .8em
+  font-weight: 300
+  line-height: 1
+  margin: 0 0 10px 0
+.bottom_btn
+  width: 100%
+  padding: 8px
+  color: #FF7212
+  background-color: transparent
+  font-size: .8em
+  text-transform: uppercase
+  border: 1px solid #FF7212
+  display: block
+  border-radius: 4px
+  margin-top: 20px
+  font-weight: 800
+.btn_fill
+  background-color: #FF7212
+  color: $white
+.bottom_btn:hover
+  background-color: #FF7212
+  color: $white
+.btn_fill:hover
+  background-color: transparent
+  color: #FF7212
+.most_value
+  position: absolute
+  //background-color: #FFE752
+  color: $black
+  text-transform: uppercase
+  font-size: .8em
+  font-weight: 700
+  top: 5px
+  padding: 3px 15px
+  background-image: url(../img/label_y.svg)
+  background-size: 100%
+  background-position: center
+  background-repeat: no-repeat
+
+.lightbox_opened
+  .full_screen_modal
+    display: flex
+.full_screen_modal
+  position: fixed
+  width: 100%
+  height: 100vh
+  background-color: rgba(0,0,0,0.8)
+  display: flex
+  align-items: center
+  z-index: 99
+  top: 0
+  bottom: 0
+  left: 0
+  right: 0
+  display: none
+  form
+    width: 100%
+    .section_slide_radio
+      .radio-buttons
+        .second:checked ~ .slider
+          left: 127px
+  button:first-child
+    background-color: $white
+    background-image: linear-gradient(100deg, #FF7045 50%, $white 50%)
+    border: 1px solid #D1D1D1
+    color: $darkcolor
+  button:first-child:hover
+    color: $white
+  .main_button
+    border-radius: 8px
+    padding: 2px 3px
+    font-size: .8em
+  .modal_inner_container
+    position: relative
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 100%
+    max-width: 320px
+    margin: auto
+    background-color: #fff
+    padding: 20px
+    border-radius: 12px
+    text-align: center
+    .middle_title
+      margin-top: 0
+.close_popup
+  position: absolute
+  top: -15px
+  right: -15px
+  cursor: pointer
+.close_popup:hover
+  transform: rotate(180deg)
+
+//FOOTER
+footer
+  background-color: $darkcolor
+  height: 40px
+.footer_content
+  display: flex
+  position: relative
+  flex-direction: row
+  align-items: center
+  justify-content: space-between
+  color: $white
+  font-size: .8em
+  height: 100%
+  div
+    display: flex
+    flex-direction: row
+    img
+      margin-right: 10px
+  a
+    color: $white
+.footer_links
+  a
+    padding: 0 20px
+  a:last-child
+    padding-right: 0
+
+//TERMINOS
+.the_title_page
+  text-align: left
+  line-height: 90px
+  font-weight: 900
+  font-size: 1.2em
+.the_content
+  background-color: $white
+  padding: 35px 0
+
+@media (min-width: $screen-xxl-dsk)
+
+@media (max-width: $screen-xl-min)
+
+
+@media (max-width: $screen-sm-dsk)
+
+
+@media (max-width: $screen-lg-min)
+  .numbers_wrapper
+    padding: 35px 10px
+  .footer_columns
+    padding: 0
+  .footer_info_content_wrapper
+    padding-left: 10px
+    width: 70%
+  .title_footer_section
+    font-size: 1.5
+  .title_footer_section
+    font-size: 1.6
+  .p_footer_section
+    font-size: 1em
+
+@media (max-width: $screen-md-min)
+  .funciona_section
+    flex-direction: column
+  .btns_wrapper .main_button.orange
+    display: none
+  .header_cont_buttons > p
+    display: none
+  .home_seccion_productos
+    width: 100%
+    grid-template-columns: 1fr
+
+@media (max-width: $screen-sm-min)
+  .header_cont_logo
+    figure
+      img
+        width: 90px
+  .main_slide_content
+    padding: 5rem 0
+  .scb_logo
+    left: 0
+    img
+      width: 95px
+  .main_slide_content
+    h1
+      font-size: 1.9em
+      br
+        display: none
+  .percent_60
+    max-width: 100%
+  .home_white_section
+    h2
+      font-size: 1.4em
+  footer
+    height: auto
+  .footer_content
+    flex-direction: column
+    padding: 5px 0
+
+
+@media (max-width: $screen-xsm-min)
+  footer
+    height: auto
+  .footer_content
+    flex-direction: column
+    padding: 5px 0
+  .btns_wrapper
+    button:last-child
+      margin-right: 0
+      font-size: .8em
+      padding: 8px 10px
+
+@media (max-width: $screen-xxsm-min)

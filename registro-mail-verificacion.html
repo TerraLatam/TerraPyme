@@ -3,7 +3,7 @@
 
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<title>Terra Pyme - Pago exitoso</title>
+	<title>Pymes Scotiabank</title>
 	<meta name="author" content="" />
 	<meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -12,26 +12,27 @@
 	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+	<link rel="manifest" href="img/favicon/site.webmanifest">
 	<meta name="msapplication-TileColor" content="#da532c">
 	<meta name="theme-color" content="#ffffff">
 
 	<link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600;700&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="css/main-flujo.css">
+	<link rel="stylesheet" href="css/slider/slick.css">
+	<link rel="stylesheet" href="css/slider/slick-theme.css">
+	<link rel="stylesheet" href="css/main.css">
 
 </head>
 <body>
 
-	<div class="main_wrapper fw dashboard">
+	<div class="main_wrapper fw">
 		<header role="header" class="fw">
 			<div class="inner_container box header_content">
 				<div class="header_cont_logo">
 					<figure><a href="index.html"><img src="img/logo_terra_pymes.svg" alt="Logotipo Terra-Pymes"></a></figure>
-					<figure><img class="logo_pyme" src="img/logo_pyme.svg"></figure>
 				</div>
 				<div class="header_cont_buttons">
-					<p><a href="index.html" class="tag-">Mis productos</a></p>
 					<div class="btns_wrapper">
-						<button role="button" class="main_button darkgrey logout"><span>SM</span>Cerrar sesión</button>
+						<img src="img/logo_scotiabank.svg" alt="Logo Scotiabank">
 					</div>
 				</div>
 			</div>
@@ -39,13 +40,15 @@
 
 		<main role="main" class="fw main_container_bck message_screen">
 			<div class="inner_container box">
-				<div class="forms_container min_heigh">
+				<div class="forms_container">
 					<div class="form_center_wrapper">
-						<img src="img/icon_pago_exitoso.svg">
-						<h1>Pago exitoso</h1>
-						<p>Se realizó el cobro del dominio por  <span>$8.500 CLP</span> estamos enviando tu factura al correo <span>factura@mail.com. </span>  </p>
-						<p>Tu producto ya ha sido activado.</p>
-	 					<button role="button" class="main_button form_submit_button orange">Continuar</button>
+						<img src="img/img_verifica_correo.svg">
+						<h1>Verifica tu correo</h1>
+						<p>Te hemos enviado un correo electrónico a la cuenta indicada para que puedas verificarla y poder continuar con el proceso de registro.</p>
+						<p>Si no te ha llegado, puedes reenviarlo, o bien revisar tu registro.</p>
+	 					<button role="button" class="main_button form_submit_button orange">Reenviar correo</button>
+						<button role="button" class="main_button form_submit_button orange">Contactar asesor</button>
+						<p class="get_back_link"><a href="#.">Modificar registro</a></p>
 
 					</div>
 				</div>
@@ -55,13 +58,14 @@
 		<footer role="footer" class="fw">
 			<div class="inner_container box footer_content">
 				<div><img src="img/terra_logo.svg"> © Copyright 2021. Terra Networks</div>
-				<div class="footer_links"><a href="#" class="tag-">Términos y condiciones</a><a href="#" class="tag-">Aviso de privacidad</a></div>
+				<div class="footer_links"><a href="">Términos y condiciones</a><a href="">Aviso de privacidad</a></div>
 			</div>
 		</footer>
 	</div>
 
 <script src="js/jquery.min.js"></script>
-<script src="js/flujo.js"></script>
+<script src="js/slick.js"></script>
+<script src="js/main.js"></script>
 
 
 </body>

@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html class="no-js" lang="">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Pymes Scotiabank | Listado clientes</title>
+	<meta name="author" content="" />
+	<meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="Resource-type" content="Document" />
+
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+	<link rel="manifest" href="img/favicon/site.webmanifest">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#ffffff">
+
+	<link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/slider/slick.css">
+	<link rel="stylesheet" href="css/slider/slick-theme.css">
+	<link rel="stylesheet" href="css/main.css">
+
+</head>
+<body>
+
+	<div class="main_wrapper fw dashboard">
+		<header role="header" class="fw">
+			<div class="inner_container box header_content">
+				<div class="header_cont_logo">
+					<figure><a href="index.html"><img src="img/logo_terra_pymes.svg" alt="Logotipo Terra-Pymes"></a></figure>
+				</div>
+				<div class="header_cont_buttons">
+					<p>Clientes registrados</p>
+					<div class="btns_wrapper">
+						<button role="button" class="main_button button_flat orange">Registro</button>
+						<button role="button" class="main_button darkgrey logout"><span>SM</span>Cerrar sesión</button>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<main role="main" class="fw main_container_bck">
+			<div class="inner_container box">
+				<div class="clientes_head_buttons">
+					<div class="header_text">Clientes registrados</div>
+					<div class="right_buttons">
+						<div class="custom-select">
+						  <select>
+						    <option value="0">Estatus</option>
+						    <option value="1">Correo no verificado</option>
+						    <option value="2">Autorización pendiente</option>
+						    <option value="3">Registro autorizado</option>
+						    <option value="4">Registro rechazado</option>
+						  </select>
+						</div>
+						<button role="button" class="main_button form_submit_button orange">Nuevo registro</button>
+					</div>
+				</div>
+
+				<div class="tables_container">
+					<table>
+					  <thead>
+					    <tr>
+					      <th scope="col">Nombre</th>
+					      <th scope="col">Correo electrónico</th>
+					      <th scope="col">No. de Cliente</th>
+					      <th scope="col">Tipo cliente</th>
+								<th scope="col">Fecha registro</th>
+								<th scope="col">Último estatus</th>
+								<th scope="col"></th>
+					    </tr>
+					  </thead>
+					  <tbody>
+					    <tr>
+					      <td data-label="Nombre"> <span title="Registro autorizado" class="status_dot green_dot"></span> Rodrigo Alvarez</td>
+					      <td data-label="Correo electrónico">rodrigo.alvarez@gmail.com</td>
+					      <td data-label="No. de Cliente">0123456789</td>
+					      <td data-label="Tipo cliente">Base instalada</td>
+								<td data-label="Fecha registro">15/01/2021 - 10:30</td>
+								<td data-label="Último estatus" title="15/01/2021 - 10:30">Autorización pendiente</td>
+								<td data-label="">
+									<div class="icons_table_wrapper">
+										<div class="table_icons email_icon"><img title="Reenviar correo de rechazo" src="img/icon_table_arroba.svg"><span>Reenviar correo <br>de rechazo</span></div>
+										<div class="table_icons chech_icon"><img title="Autorizar" src="img/icon_table_chech.svg"><span>Autorizar</span></div>
+										<div class="table_icons disable_icon"><img title="Rechazar" src="img/icon_table_cross.svg"><span>Rechazar</span></div>
+										<div class="table_icons edit_icon"><img title="Editar registro" src="img/icon_table_edit.svg"><span>Editar registro</span></div>
+									</div>
+								</td>
+					    </tr>
+					    <tr>
+								<td data-label="Nombre"><span title="Correo no verificado" class="status_dot yellow_dot"></span> Juan Pedro Martinez del Campo</td>
+					      <td data-label="Correo electrónico">jpmartinez@gmail.com</td>
+					      <td data-label="No. de Cliente">0123456789</td>
+					      <td data-label="Tipo cliente">No definido</td>
+								<td data-label="Fecha registro">15/01/2021 - 10:30</td>
+								<td data-label="Último estatus" title="15/01/2021 - 10:30">Registro autorizado</td>
+								<td data-label="">
+									<div class="icons_table_wrapper">
+										<div class="table_icons email_icon"><img title="Reenviar correo de rechazo" src="img/icon_table_arroba.svg"><span>Reenviar correo <br>de rechazo</span></div>
+										<div class="table_icons chech_icon"><img title="Autorizar" src="img/icon_table_chech.svg"><span>Autorizar</span></div>
+										<div class="table_icons disable_icon"><img title="Rechazar" src="img/icon_table_cross.svg"><span>Rechazar</span></div>
+										<div class="table_icons edit_icon"><img title="Editar registro" src="img/icon_table_edit.svg"><span>Editar registro</span></div>
+									</div>
+								</td>
+					    </tr>
+					    <tr>
+								<td data-label="Nombre"><span title="Autorización pendiente" class="status_dot grey_dot"></span> Luis Alberto Pereira Hernandez</td>
+					      <td data-label="Correo electrónico">luispereirasilverman@gmail.com</td>
+					      <td data-label="No. de Cliente">0123456789</td>
+					      <td data-label="Tipo cliente">Nuevo</td>
+								<td data-label="Fecha registro">15/01/2021 - 10:30</td>
+								<td data-label="Último estatus" title="15/01/2021 - 10:30">Correo no verificado</td>
+								<td data-label="">
+									<div class="icons_table_wrapper">
+										<div class="table_icons email_icon"><img title="Reenviar correo de rechazo" src="img/icon_table_arroba.svg"><span>Reenviar correo <br>de rechazo</span></div>
+										<div class="table_icons chech_icon"><img title="Autorizar" src="img/icon_table_chech.svg"><span>Autorizar</span></div>
+										<div class="table_icons disable_icon"><img title="Rechazar" src="img/icon_table_cross.svg"><span>Rechazar</span></div>
+										<div class="table_icons edit_icon"><img title="Editar registro" src="img/icon_table_edit.svg"><span>Editar registro</span></div>
+									</div>
+								</td>
+					    </tr>
+					    <tr>
+								<td data-label="Nombre"><span title="Registro rechazado" class="status_dot red_dot"></span> Rodrigo Alvarez</td>
+					      <td data-label="Correo electrónico">rodrigo.alvarez@gmail.com</td>
+					      <td data-label="No. de Cliente">0123456789</td>
+					      <td data-label="Tipo cliente">Base instalada</td>
+								<td data-label="Fecha registro">15/01/2021 - 10:30</td>
+								<td data-label="Último estatus" title="15/01/2021 - 10:30">Registro autorizado</td>
+								<td data-label="">
+									<div class="icons_table_wrapper">
+										<div class="table_icons email_icon"><img title="Reenviar correo de rechazo" src="img/icon_table_arroba.svg"><span>Reenviar correo <br>de rechazo</span></div>
+										<div class="table_icons chech_icon"><img title="Autorizar" src="img/icon_table_chech.svg"><span>Autorizar</span></div>
+										<div class="table_icons disable_icon"><img title="Rechazar" src="img/icon_table_cross.svg"><span>Rechazar</span></div>
+										<div class="table_icons edit_icon"><img title="Editar registro" src="img/icon_table_edit.svg"><span>Editar registro</span></div>
+									</div>
+								</td>
+					    </tr>
+							<tr>
+					      <td data-label="Nombre"> <span title="Registro autorizado" class="status_dot green_dot"></span> Rodrigo Alvarez</td>
+					      <td data-label="Correo electrónico">rodrigo.alvarez@gmail.com</td>
+					      <td data-label="No. de Cliente">0123456789</td>
+					      <td data-label="Tipo cliente">Base instalada</td>
+								<td data-label="Fecha registro">15/01/2021 - 10:30</td>
+								<td data-label="Último estatus" title="15/01/2021 - 10:30">Autorización pendiente</td>
+								<td data-label="">
+									<div class="icons_table_wrapper">
+										<div class="table_icons email_icon"><img title="Reenviar correo de rechazo" src="img/icon_table_arroba.svg"><span>Reenviar correo <br>de rechazo</span></div>
+										<div class="table_icons chech_icon"><img title="Autorizar" src="img/icon_table_chech.svg"><span>Autorizar</span></div>
+										<div class="table_icons disable_icon"><img title="Rechazar" src="img/icon_table_cross.svg"><span>Rechazar</span></div>
+										<div class="table_icons edit_icon"><img title="Editar registro" src="img/icon_table_edit.svg"><span>Editar registro</span></div>
+									</div>
+								</td>
+					    </tr>
+					    <tr>
+								<td data-label="Nombre"><span title="Correo no verificado" class="status_dot yellow_dot"></span> Juan Pedro Martinez del Campo</td>
+					      <td data-label="Correo electrónico">jpmartinez@gmail.com</td>
+					      <td data-label="No. de Cliente">0123456789</td>
+					      <td data-label="Tipo cliente">No definido</td>
+								<td data-label="Fecha registro">15/01/2021 - 10:30</td>
+								<td data-label="Último estatus" title="15/01/2021 - 10:30">Registro autorizado</td>
+								<td data-label="">
+									<div class="icons_table_wrapper">
+										<div class="table_icons email_icon"><img title="Reenviar correo de rechazo" src="img/icon_table_arroba.svg"><span>Reenviar correo <br>de rechazo</span></div>
+										<div class="table_icons chech_icon"><img title="Autorizar" src="img/icon_table_chech.svg"><span>Autorizar</span></div>
+										<div class="table_icons disable_icon"><img title="Rechazar" src="img/icon_table_cross.svg"><span>Rechazar</span></div>
+										<div class="table_icons edit_icon"><img title="Editar registro" src="img/icon_table_edit.svg"><span>Editar registro</span></div>
+									</div>
+								</td>
+					    </tr>
+					    <tr>
+								<td data-label="Nombre"><span title="Autorización pendiente" class="status_dot grey_dot"></span> Luis Alberto Pereira Hernandez</td>
+					      <td data-label="Correo electrónico">luispereirasilverman@gmail.com</td>
+					      <td data-label="No. de Cliente">0123456789</td>
+					      <td data-label="Tipo cliente">Nuevo</td>
+								<td data-label="Fecha registro">15/01/2021 - 10:30</td>
+								<td data-label="Último estatus" title="15/01/2021 - 10:30">Correo no verificado</td>
+								<td data-label="">
+									<div class="icons_table_wrapper">
+										<div class="table_icons email_icon"><img title="Reenviar correo de rechazo" src="img/icon_table_arroba.svg"><span>Reenviar correo <br>de rechazo</span></div>
+										<div class="table_icons chech_icon"><img title="Autorizar" src="img/icon_table_chech.svg"><span>Autorizar</span></div>
+										<div class="table_icons disable_icon"><img title="Rechazar" src="img/icon_table_cross.svg"><span>Rechazar</span></div>
+										<div class="table_icons edit_icon"><img title="Editar registro" src="img/icon_table_edit.svg"><span>Editar registro</span></div>
+									</div>
+								</td>
+					    </tr>
+					    <tr>
+								<td data-label="Nombre"><span title="Registro rechazado" class="status_dot red_dot"></span> Rodrigo Alvarez</td>
+					      <td data-label="Correo electrónico">rodrigo.alvarez@gmail.com</td>
+					      <td data-label="No. de Cliente">0123456789</td>
+					      <td data-label="Tipo cliente">Base instalada</td>
+								<td data-label="Fecha registro">15/01/2021 - 10:30</td>
+								<td data-label="Último estatus" title="15/01/2021 - 10:30">Registro autorizado</td>
+								<td data-label="">
+									<div class="icons_table_wrapper">
+										<div class="table_icons email_icon"><img title="Reenviar correo de rechazo" src="img/icon_table_arroba.svg"><span>Reenviar correo <br>de rechazo</span></div>
+										<div class="table_icons chech_icon"><img title="Autorizar" src="img/icon_table_chech.svg"><span>Autorizar</span></div>
+										<div class="table_icons disable_icon"><img title="Rechazar" src="img/icon_table_cross.svg"><span>Rechazar</span></div>
+										<div class="table_icons edit_icon"><img title="Editar registro" src="img/icon_table_edit.svg"><span>Editar registro</span></div>
+									</div>
+								</td>
+					    </tr>
+							<tr>
+					      <td data-label="Nombre"> <span title="Registro autorizado" class="status_dot green_dot"></span> Rodrigo Alvarez</td>
+					      <td data-label="Correo electrónico">rodrigo.alvarez@gmail.com</td>
+					      <td data-label="No. de Cliente">0123456789</td>
+					      <td data-label="Tipo cliente">Base instalada</td>
+								<td data-label="Fecha registro">15/01/2021 - 10:30</td>
+								<td data-label="Último estatus" title="15/01/2021 - 10:30">Autorización pendiente</td>
+								<td data-label="">
+									<div class="icons_table_wrapper">
+										<div class="table_icons email_icon"><img title="Reenviar correo de rechazo" src="img/icon_table_arroba.svg"><span>Reenviar correo <br>de rechazo</span></div>
+										<div class="table_icons chech_icon"><img title="Autorizar" src="img/icon_table_chech.svg"><span>Autorizar</span></div>
+										<div class="table_icons disable_icon"><img title="Rechazar" src="img/icon_table_cross.svg"><span>Rechazar</span></div>
+										<div class="table_icons edit_icon"><img title="Editar registro" src="img/icon_table_edit.svg"><span>Editar registro</span></div>
+									</div>
+								</td>
+					    </tr>
+					    <tr>
+								<td data-label="Nombre"><span title="Correo no verificado" class="status_dot yellow_dot"></span> Juan Pedro Martinez del Campo</td>
+					      <td data-label="Correo electrónico">jpmartinez@gmail.com</td>
+					      <td data-label="No. de Cliente">0123456789</td>
+					      <td data-label="Tipo cliente">No definido</td>
+								<td data-label="Fecha registro">15/01/2021 - 10:30</td>
+								<td data-label="Último estatus" title="15/01/2021 - 10:30">Registro autorizado</td>
+								<td data-label="">
+									<div class="icons_table_wrapper">
+										<div class="table_icons email_icon"><img title="Reenviar correo de rechazo" src="img/icon_table_arroba.svg"><span>Reenviar correo <br>de rechazo</span></div>
+										<div class="table_icons chech_icon"><img title="Autorizar" src="img/icon_table_chech.svg"><span>Autorizar</span></div>
+										<div class="table_icons disable_icon"><img title="Rechazar" src="img/icon_table_cross.svg"><span>Rechazar</span></div>
+										<div class="table_icons edit_icon"><img title="Editar registro" src="img/icon_table_edit.svg"><span>Editar registro</span></div>
+									</div>
+								</td>
+					    </tr>
+					    <tr>
+								<td data-label="Nombre"><span title="Autorización pendiente" class="status_dot grey_dot"></span> Luis Alberto Pereira Hernandez</td>
+					      <td data-label="Correo electrónico">luispereirasilverman@gmail.com</td>
+					      <td data-label="No. de Cliente">0123456789</td>
+					      <td data-label="Tipo cliente">Nuevo</td>
+								<td data-label="Fecha registro">15/01/2021 - 10:30</td>
+								<td data-label="Último estatus" title="15/01/2021 - 10:30">Correo no verificado</td>
+								<td data-label="">
+									<div class="icons_table_wrapper">
+										<div class="table_icons email_icon"><img title="Reenviar correo de rechazo" src="img/icon_table_arroba.svg"><span>Reenviar correo <br>de rechazo</span></div>
+										<div class="table_icons chech_icon"><img title="Autorizar" src="img/icon_table_chech.svg"><span>Autorizar</span></div>
+										<div class="table_icons disable_icon"><img title="Rechazar" src="img/icon_table_cross.svg"><span>Rechazar</span></div>
+										<div class="table_icons edit_icon"><img title="Editar registro" src="img/icon_table_edit.svg"><span>Editar registro</span></div>
+									</div>
+								</td>
+					    </tr>
+					    <tr>
+								<td data-label="Nombre"><span title="Registro rechazado" class="status_dot red_dot"></span> Rodrigo Alvarez</td>
+					      <td data-label="Correo electrónico">rodrigo.alvarez@gmail.com</td>
+					      <td data-label="No. de Cliente">0123456789</td>
+					      <td data-label="Tipo cliente">Base instalada</td>
+								<td data-label="Fecha registro">15/01/2021 - 10:30</td>
+								<td data-label="Último estatus" title="15/01/2021 - 10:30">Registro autorizado</td>
+								<td data-label="">
+									<div class="icons_table_wrapper">
+										<div class="table_icons email_icon"><img title="Reenviar correo de rechazo" src="img/icon_table_arroba.svg"><span>Reenviar correo <br>de rechazo</span></div>
+										<div class="table_icons chech_icon"><img title="Autorizar" src="img/icon_table_chech.svg"><span>Autorizar</span></div>
+										<div class="table_icons disable_icon"><img title="Rechazar" src="img/icon_table_cross.svg"><span>Rechazar</span></div>
+										<div class="table_icons edit_icon"><img title="Editar registro" src="img/icon_table_edit.svg"><span>Editar registro</span></div>
+									</div>
+								</td>
+					    </tr>
+							<tr>
+					      <td data-label="Nombre"> <span title="Registro autorizado" class="status_dot green_dot"></span> Rodrigo Alvarez</td>
+					      <td data-label="Correo electrónico">rodrigo.alvarez@gmail.com</td>
+					      <td data-label="No. de Cliente">0123456789</td>
+					      <td data-label="Tipo cliente">Base instalada</td>
+								<td data-label="Fecha registro">15/01/2021 - 10:30</td>
+								<td data-label="Último estatus" title="15/01/2021 - 10:30">Autorización pendiente</td>
+								<td data-label="">
+									<div class="icons_table_wrapper">
+										<div class="table_icons email_icon"><img title="Reenviar correo de rechazo" src="img/icon_table_arroba.svg"><span>Reenviar correo <br>de rechazo</span></div>
+										<div class="table_icons chech_icon"><img title="Autorizar" src="img/icon_table_chech.svg"><span>Autorizar</span></div>
+										<div class="table_icons disable_icon"><img title="Rechazar" src="img/icon_table_cross.svg"><span>Rechazar</span></div>
+										<div class="table_icons edit_icon"><img title="Editar registro" src="img/icon_table_edit.svg"><span>Editar registro</span></div>
+									</div>
+								</td>
+					    </tr>
+					    <tr>
+								<td data-label="Nombre"><span title="Correo no verificado" class="status_dot yellow_dot"></span> Juan Pedro Martinez del Campo</td>
+					      <td data-label="Correo electrónico">jpmartinez@gmail.com</td>
+					      <td data-label="No. de Cliente">0123456789</td>
+					      <td data-label="Tipo cliente">No definido</td>
+								<td data-label="Fecha registro">15/01/2021 - 10:30</td>
+								<td data-label="Último estatus" title="15/01/2021 - 10:30">Registro autorizado</td>
+								<td data-label="">
+									<div class="icons_table_wrapper">
+										<div class="table_icons email_icon"><img title="Reenviar correo de rechazo" src="img/icon_table_arroba.svg"><span>Reenviar correo <br>de rechazo</span></div>
+										<div class="table_icons chech_icon"><img title="Autorizar" src="img/icon_table_chech.svg"><span>Autorizar</span></div>
+										<div class="table_icons disable_icon"><img title="Rechazar" src="img/icon_table_cross.svg"><span>Rechazar</span></div>
+										<div class="table_icons edit_icon"><img title="Editar registro" src="img/icon_table_edit.svg"><span>Editar registro</span></div>
+									</div>
+								</td>
+					    </tr>
+					    <tr>
+								<td data-label="Nombre"><span title="Autorización pendiente" class="status_dot grey_dot"></span> Luis Alberto Pereira Hernandez</td>
+					      <td data-label="Correo electrónico">luispereirasilverman@gmail.com</td>
+					      <td data-label="No. de Cliente">0123456789</td>
+					      <td data-label="Tipo cliente">Nuevo</td>
+								<td data-label="Fecha registro">15/01/2021 - 10:30</td>
+								<td data-label="Último estatus" title="15/01/2021 - 10:30">Correo no verificado</td>
+								<td data-label="">
+									<div class="icons_table_wrapper">
+										<div class="table_icons email_icon"><img title="Reenviar correo de rechazo" src="img/icon_table_arroba.svg"><span>Reenviar correo <br>de rechazo</span></div>
+										<div class="table_icons chech_icon"><img title="Autorizar" src="img/icon_table_chech.svg"><span>Autorizar</span></div>
+										<div class="table_icons disable_icon"><img title="Rechazar" src="img/icon_table_cross.svg"><span>Rechazar</span></div>
+										<div class="table_icons edit_icon"><img title="Editar registro" src="img/icon_table_edit.svg"><span>Editar registro</span></div>
+									</div>
+								</td>
+					    </tr>
+					    <tr>
+								<td data-label="Nombre"><span title="Registro rechazado" class="status_dot red_dot"></span> Rodrigo Alvarez</td>
+					      <td data-label="Correo electrónico">rodrigo.alvarez@gmail.com</td>
+					      <td data-label="No. de Cliente">0123456789</td>
+					      <td data-label="Tipo cliente">Base instalada</td>
+								<td data-label="Fecha registro">15/01/2021 - 10:30</td>
+								<td data-label="Último estatus" title="15/01/2021 - 10:30">Registro autorizado</td>
+								<td data-label="">
+									<div class="icons_table_wrapper">
+										<div class="table_icons email_icon"><img title="Reenviar correo de rechazo" src="img/icon_table_arroba.svg"><span>Reenviar correo <br>de rechazo</span></div>
+										<div class="table_icons chech_icon"><img title="Autorizar" src="img/icon_table_chech.svg"><span>Autorizar</span></div>
+										<div class="table_icons disable_icon"><img title="Rechazar" src="img/icon_table_cross.svg"><span>Rechazar</span></div>
+										<div class="table_icons edit_icon"><img title="Editar registro" src="img/icon_table_edit.svg"><span>Editar registro</span></div>
+									</div>
+								</td>
+					    </tr>
+					  </tbody>
+					</table>
+				</div>
+
+			</div>
+		</main>
+
+		<div class="full_screen_modal">
+			<div class="modal_inner_container">
+				<img class="close_popup" src="img/close_popup.svg">
+				<form id="form_registro_cuenta" action="">
+					<div  class="contact_form">
+
+						 <div class="middle_title">Tipo de Cliente (meses gratuidad)</div>
+						 <div class="section_slide_radio">
+							 <div class="radio-buttons">
+								 <input type="radio" id="cliente_nuevo" class="first" name="section-4" value="0" checked>
+								 <label for="cliente_nuevo">Cliente nuevo</label>
+								 <input type="radio" id="base_instalada" class="second" name="section-4" value="1">
+								 <label for="base_instalada">Base instalada</label>
+								 <div class="slider"></div>
+							 </div>
+						 </div>
+
+					</div>
+					<div class="update_data_btns">
+						<button role="button" class="main_button form_submit_button orange">Guardar cambios</button>
+						<button role="button" class="main_button form_submit_button orange">Autorizar</button>
+					</div>
+			 </form>
+	 		</div>
+		</div>
+
+		<footer role="footer" class="fw">
+			<div class="inner_container box footer_content">
+				<div><img src="img/terra_logo.svg"> © Copyright 2021. Terra Networks</div>
+				<div class="footer_links"><a href="">Términos y condiciones</a><a href="">Aviso de privacidad</a></div>
+			</div>
+		</footer>
+	</div>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/slick.js"></script>
+<script src="js/main.js"></script>
+
+
+</body>
+</html>
