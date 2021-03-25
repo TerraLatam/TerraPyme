@@ -1844,6 +1844,13 @@ figure {
   flex-direction: row;
   justify-content: space-between;
   margin-bottom: 20px; }
+  .demo_sites a {
+    width: 24%;
+    cursor: pointer;
+    position: relative;
+    display: block; }
+    .demo_sites a img {
+      width: 100%; }
   .demo_sites .single_demo {
     width: 24%;
     cursor: pointer;
