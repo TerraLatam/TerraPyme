@@ -785,6 +785,15 @@ button.button_flat {
 .popupOpen .full_screen_modal {
   display: flex; }
 
+main .min_heigh {
+  min-height: calc(100vh - 136px); }
+
+.message_screen p span {
+  color: #FF7045;
+  font-weight: 800; }
+.message_screen .error_issue {
+  font-weight: 800; }
+
 @media (max-width: 1290px) {
   .single_form_item .fieldest_row {
     flex-direction: column; }
