@@ -1,10 +1,4 @@
 $(document).ready(function(){
-  //HOME LIGHTBOOX PARA SCREENSHOTS
-  $('.demo_sites').magnificPopup({
-  delegate: 'a', // child items selector, by clicking on it popup will open
-  type: 'image'
-  // other options
-});
   //PLAN SELECTED pymes_datos de pago.html
   $('.plan_btn').click(function(event){
     event.preventDefault();
