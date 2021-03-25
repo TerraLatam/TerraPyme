@@ -1,0 +1,115 @@
+main
+  .the_content.my_products_wrapper
+    background-color: transparent
+    .single_column
+      text-align: left
+      h2
+        margin-bottom: 10px
+.productos_main_img
+  width: 362px
+.bck_org
+  background-color: $orange
+  border-radius: 8px
+  overflow: hidden
+.back_dark_grey
+  background-color: $buttonsgrey
+  border-radius: 10px
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+.products_stats
+  padding: 20px
+  display: grid
+  grid-template-columns: 1fr 1fr
+  grid-gap: 20px
+.stats_item
+  background-color: $white
+  border-radius: 10px
+  position: relative
+.stat_title
+  background-color: $back_darkgrey
+  color: $white
+  border-radius: 10px 10px 0 0
+  padding: 5px 0
+  font-size: .8em
+.stat_data
+  padding: 10px
+  text-align: center
+  font-weight: 800
+  color: $orange
+  font-size: 1.2rem
+.feed_terra
+  width: 768px
+  height: 125px
+  max-width: 768px
+  max-height: 125px
+  margin-left: auto
+  margin-right: auto
+  iframe
+    width: 100%
+    border: none
+.buttons_wrapper
+  display: grid
+  grid-template-columns: 1fr 1fr
+  grid-gap: 20px
+  margin-top: 25px
+  a.main_btn
+    font-size: .7rem
+    padding: 5px
+    margin-bottom: 0
+.regular_info
+  font-size: .9rem
+  line-height: 1.4rem
+  span
+    a
+      color: $orange
+      text-decoration: underline
+.regular_info.color_red
+  font-weight: 700
+.animated_label
+  background-color: #4A4A4A
+  border-radius: 120px 0 0 120px
+  padding: 15px
+  padding-right: 35px
+  color: #FFFFFF
+  position: fixed
+  z-index: 9
+  right: 0
+  bottom: 10%
+  display: flex
+  flex-direction: row
+  img
+    margin-right: 15px
+
+
+
+@media (min-width: $screen-xxl-dsk)
+
+@media (max-width: $screen-xl-min)
+
+
+@media (max-width: $screen-sm-dsk)
+  .my_products_wrapper
+    .back_white
+      padding: 15px
+
+@media (max-width: $screen-lg-min)
+
+
+@media (max-width: $screen-md-min)
+  .feed_terra
+    width: 300px
+    height: 125px
+    max-width: 768px
+    max-height: 125px
+    margin-left: auto
+    margin-right: auto
+
+@media (max-width: $screen-sm-min)
+  .productos_main_img
+    width: 100%
+
+@media (max-width: $screen-xsm-min)
+
+
+@media (max-width: $screen-xxsm-min)
