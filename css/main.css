@@ -921,13 +921,13 @@ button.button_flat {
         .tables_container table thead tr th:nth-child(7) {
           width: 155px; }
     .tables_container table tbody tr td:nth-child(1) {
-      width: 220px; }
+      width: 215px; }
     .tables_container table tbody tr td:nth-child(2) {
       width: 215px; }
     .tables_container table tbody tr td:nth-child(3) {
       width: 120px; }
     .tables_container table tbody tr td:nth-child(4) {
-      width: 120px; }
+      width: 115px; }
     .tables_container table tbody tr td:nth-child(5) {
       width: 175px; }
     .tables_container table tbody tr td:nth-child(6) {
@@ -960,9 +960,9 @@ button.button_flat {
   .listado_autorizante.tables_container table tbody tr td:nth-child(4) {
     width: 120px; }
   .listado_autorizante.tables_container table tbody tr td:nth-child(5) {
-    width: 190px; }
+    width: 180px; }
   .listado_autorizante.tables_container table tbody tr td:nth-child(6) {
-    width: 190px; }
+    width: 180px; }
   .listado_autorizante.tables_container table tbody tr td:nth-child(7) {
     width: 80px; } }
 @media (max-width: 1265px) {
