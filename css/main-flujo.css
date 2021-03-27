@@ -807,16 +807,16 @@ main .min_heigh {
   .single_form_item .fieldest_row.fieldset_street_number div:last-child {
     width: 100%; }
   .single_form_item .fieldest_row.fieldset_city_region div {
-    width: 100%; } }
+    width: 100%; }
+
+  .forms_container .main_seccion {
+    grid-template-columns: 1fr; } }
 @media (max-width: 769px) {
   .single_column {
     padding: 15px; }
 
   .back_white {
     padding: 15px 0; }
-
-  .forms_container .main_seccion {
-    grid-template-columns: 1fr; }
 
   .single_form_item .fieldest_row {
     flex-direction: row; }
