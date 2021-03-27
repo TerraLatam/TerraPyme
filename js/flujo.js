@@ -34,4 +34,28 @@ $(document).ready(function(){
        $('.legales_dominio').css('display','grid');
     }
   });
+
+  //GENERAR CONTRASEÑA: show-hide password
+  //terra-pyme-products-crear-buzon.html
+  $('.pssw1').click(function(){
+    $(this).toggleClass('showPss');
+
+    var x = $('#new_password');
+    if (x.attr('type')=== 'password') {
+      x.attr('type','text');
+    }else {
+      x.attr('type','password');
+    }
+  });
+  $('.pssw2').click(function(){
+    $(this).toggleClass('showPss');
+
+    var x = $('#confirm_new_password');
+    if (x.attr('type')=== 'password') {
+      x.attr('type','text');
+    }else {
+      x.attr('type','password');
+    }
+  });
+
 })

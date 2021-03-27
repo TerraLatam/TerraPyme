@@ -1,0 +1,113 @@
+.orange_border
+  border: 2px solid $orange
+  position: relative
+.orange_border::after
+    content: url(../img/orange_triangle.svg)
+    width: 12px
+    height: 20px
+    position: absolute
+    left: -16px
+    top: 50%
+.fieldset_double
+  padding: 0.35em 0 0.75em
+  div
+    width: 48%
+  .form-group
+    margin-top: 0
+    .icon_eye
+      width: 15px
+    input
+      padding-right: 37px
+.disable_inputs
+  input
+    pointer-events: none
+    background-color: $backgroundcolor
+    color: rgba(0,0,0,0.3)
+.single_form_item
+  fieldset
+    padding: 0.35em 0 0.75em
+    padding: 0
+    .input_mail_wrapper
+      display: flex
+      flex-direction: row
+      width: 100%
+      align-items: center
+  .fieldset_buzon
+    input
+      width: 48%
+      margin-right: 10px
+    input.full
+      width: 100%
+  .buzon_detail_lines
+    font-size: 0.8em
+    color: #707070
+    line-height: 1.6em
+    padding-left: 0
+    margin-top: 0
+.full
+  width: 100% !important
+.no_margin
+  margin: 0
+.only_marg_top
+  margin-top: 20px
+  margin-bottom: 0
+.line_divider
+  width: 100%
+  background-color: $orange
+  height: 2px
+  margin: 40px 0
+.justify_start
+  .div_remain_bottom
+    margin-top: auto
+a.active_orange_btn
+    color: $white
+    background-color: $orange
+    background-image: linear-gradient(100deg, #ef5c30 50%, $orange 50%)
+.buzon_item
+  padding: 15px
+.buzon_container
+  margin: 15px 0
+  border-radius: 10px
+.white_btn
+  background-color: transparent
+  background-image: linear-gradient(100deg, rgba(255, 255, 255, .9) 50%, rgba(255, 255, 255, 1) 50%)
+  border: 1px solid #FF7045
+  color: #FF7045
+.txt_mod_buz
+  color: $white
+.buzon_mail
+  margin-bottom: 20px
+.back_middlegrey
+  background-color: $fontcolor
+.disable_btn
+  pointer-events: none
+  opacity: .5
+
+
+@media (min-width: $screen-xxl-dsk)
+
+@media (max-width: $screen-xl-min)
+
+
+@media (max-width: $screen-sm-dsk)
+
+
+@media (max-width: $screen-lg-min)
+
+
+@media (max-width: $screen-md-min)
+  .orange_border::after
+    left: 50%
+    top: -20px
+    transform: rotateZ(90deg)
+  .justify_start
+    .div_remain_bottom
+      margin-top: 20px
+
+@media (max-width: $screen-sm-min)
+
+
+@media (max-width: $screen-xsm-min)
+
+
+@media (max-width: $screen-xxsm-min)
