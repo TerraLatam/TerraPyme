@@ -3,7 +3,7 @@
 
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<title>Terra Pyme - Problemas de pago</title>
+	<title>Terra Pyme - Login</title>
 	<meta name="author" content="" />
 	<meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -12,41 +12,52 @@
 	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+	<link rel="manifest" href="img/favicon/site.webmanifest">
 	<meta name="msapplication-TileColor" content="#da532c">
 	<meta name="theme-color" content="#ffffff">
 
 	<link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600;700&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="css/main-flujo.css">
+	<link rel="stylesheet" href="css/main.css">
 
 </head>
 <body>
 
-	<div class="main_wrapper fw dashboard">
+	<div class="main_wrapper fw">
 		<header role="header" class="fw">
 			<div class="inner_container box header_content">
 				<div class="header_cont_logo">
 					<figure><a href="index.html" class="tag-logo-inicio"><img src="img/logo_terra_pymes.svg" alt="Logotipo Terra-Pymes"></a></figure>
-					<figure><img class="logo_pyme" src="img/logo_pyme.svg"></figure>
 				</div>
 				<div class="header_cont_buttons">
-					<p><a href="index.html" class="tag-mis-productos">Mis productos</a></p>
 					<div class="btns_wrapper">
-						<button role="button" class="main_button darkgrey logout"><span>SM</span>Cerrar sesión</button>
 					</div>
 				</div>
 			</div>
 		</header>
 
-		<main role="main" class="fw main_container_bck message_screen">
+		<main role="main" class="fw main_container_bck">
 			<div class="inner_container box">
-				<div class="forms_container min_heigh">
+				<div class="forms_container">
 					<div class="form_center_wrapper">
-						<img src="img/img_404.svg">
-						<h1>Problemas con el pago</h1>
-						<p> No fue posible realizar el cobro por <span>$8.500 CLP</span> debido al siguiente error: </p>
-						<p class="error_issue">Número de tarjeta inválida.</p>
-	 					<button role="button" class="main_button form_submit_button orange">Reintentar</button>
+						<h1>Ingresa a tu cuenta</h1>
+						<form id="form_ingresar_a_tu_cuenta" action="" novalidate>
+							<div  class="contact_form">
 
+		 						 <div class="form-group">
+		 							 <label class="form-label" for="my_email">Correo electrónico</label>
+		 							 <input id="my_email" class="form-input" type="email" autocomplete="off"/>
+		 						 </div>
+		 						 <div class="form-group">
+		 							 <label class="form-label" for="confirm_new_password">Ingresa tu contraseña</label>
+									 <div class="pssw2 icon_eye icon_eye_hide"></div>
+									 <!--AGREGAR / REMOVER LA CLASE wrong_input PARA OCULTAR EL TOOLTIP Y EL BORDER DE ALERTA-->
+		 							 <input id="confirm_new_password" class="form-input" type="password" autocomplete="off"/>
+		 						 </div>
+								 <div class="middle_title title_red alert">La contraseña es incorrecta</div>
+							</div>
+	 						<button role="button" class="main_button form_submit_button orange btn_disable">Acceder</button>
+							<p class="get_back_link"><a href="#.">Olvidé mi contraseña</a></p>
+ 					 </form>
 					</div>
 				</div>
 			</div>
@@ -61,7 +72,7 @@
 	</div>
 
 <script src="js/jquery.min.js"></script>
-<script src="js/flujo.js"></script>
+<script src="js/main.js"></script>
 
 
 </body>
