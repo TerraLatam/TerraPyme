@@ -137,7 +137,6 @@ $(document).ready(function(){
 
 })
 
-
 //CUSTOM SELECT
 var x, i, j, l, ll, selElmnt, a, b, c;
 x = document.getElementsByClassName("custom-select");

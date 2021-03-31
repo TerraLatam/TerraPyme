@@ -581,11 +581,13 @@ button.button_flat {
   .single_form_item .fieldest_row div {
     width: 48%; }
 .single_form_item .fieldest_row.fieldset_street_number div:first-child {
-  width: 60%; }
+  width: 48%; }
 .single_form_item .fieldest_row.fieldset_street_number div:last-child {
-  width: 38%; }
+  width: 48%; }
 .single_form_item .fieldest_row.fieldset_city_region div {
-  width: 32%; }
+  width: 48%; }
+.single_form_item .fieldest_row.fieldset_comuna div {
+  width: 100%; }
 
 .item_title {
   font-size: 1.1rem;
@@ -615,16 +617,22 @@ button.button_flat {
     font-weight: 400;
     margin: 0; }
   .plan_wrapper .plan_price {
-    font-size: 1rem;
+    font-size: 1.1rem;
     color: #FF7045;
     font-weight: 700;
     margin: 0; }
+  .plan_wrapper .plan_details {
+    margin: 0;
+    font-size: 0.9em; }
 
 .plan_selected {
   background-color: #4A4A4A;
   border: 2px solid #FF7045; }
   .plan_selected .plan_name {
     color: #FFFFFF; }
+  .plan_selected .plan_details {
+    color: #FFFFFF;
+    margin: 0; }
 
 .best_value::after {
   content: url(../img/best_value_tag.svg);
@@ -839,6 +847,23 @@ button.button_flat {
   width: calc(100% - 20px);
   margin-top: 10px;
   margin-bottom: 10px; }
+
+.products_btns_wrapper.mg_t_ato {
+  margin-top: auto; }
+
+.products_btns_wrapper.no_margin_top {
+  margin-top: 0; }
+
+div.regular_centered_wmargin {
+  text-align: center;
+  margin: auto;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px; }
+
+.justify_end {
+  align-items: flex-end;
+  justify-content: flex-end; }
 
 main .min_heigh {
   min-height: calc(100vh - 136px); }
@@ -2195,7 +2220,7 @@ header {
     align-items: center;
     justify-content: center;
     width: 100%;
-    max-width: 320px;
+    max-width: 420px;
     margin: auto;
     background-color: #fff;
     padding: 20px;
@@ -2321,7 +2346,10 @@ footer {
   .btns_wrapper button:last-child {
     margin-right: 0;
     font-size: 0.8em;
-    padding: 8px 10px; } }
+    padding: 8px 10px; }
+
+  .full_screen_modal .modal_inner_container {
+    max-width: 300px; } }
 .orange_border {
   border: 2px solid #FF7045;
   position: relative; }
@@ -2736,6 +2764,9 @@ figure {
 
 .color_red {
   color: #EB0F19; }
+
+.color_orange {
+  color: #FF7045; }
 
 .products_btns_wrapper {
   display: flex;

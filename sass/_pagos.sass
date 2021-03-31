@@ -83,12 +83,15 @@
       width: 48%
   .fieldest_row.fieldset_street_number
     div:first-child
-      width: 60%
+      width: 48%
     div:last-child
-      width: 38%
+      width: 48%
   .fieldest_row.fieldset_city_region
     div
-      width: 32%
+      width: 48%
+  .fieldest_row.fieldset_comuna
+    div
+      width: 100%
 .item_title
   font-size: 1.1rem
   font-weight: 600
@@ -117,15 +120,21 @@
     font-weight: 400
     margin: 0
   .plan_price
-    font-size: 1rem
+    font-size: 1.1rem
     color: $orange
     font-weight: 700
     margin: 0
+  .plan_details
+    margin: 0
+    font-size: .9em
 .plan_selected
   background-color: $back_darkgrey
   border: 2px solid $orange
   .plan_name
     color: $white
+  .plan_details
+    color: $white
+    margin: 0
 .best_value::after
   content: url(../img/best_value_tag.svg)
   position: absolute
@@ -326,6 +335,19 @@
     width: calc(100% - 20px)
     margin-top: 10px
     margin-bottom: 10px
+.products_btns_wrapper.mg_t_ato
+  margin-top: auto
+.products_btns_wrapper.no_margin_top
+  margin-top: 0
+div.regular_centered_wmargin
+  text-align: center
+  margin: auto
+  width: 100%
+  margin-top: 10px
+  margin-bottom: 10px
+.justify_end
+  align-items: flex-end
+  justify-content: flex-end
 //PAGO EXITOSO
 main
   .min_heigh

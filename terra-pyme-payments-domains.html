@@ -50,7 +50,7 @@
 
 						<div class="main_seccion ">
 
-							<div class="back_grey single_column">
+							<div class="back_grey single_column justify_start">
 								<div class="item_title">Dominio a utilizar:</div>
 
 								<div class="single_form_item">
@@ -60,7 +60,7 @@
 											 <input type="radio" id="dominio_propio" name="dominio" value="dominio_propio" checked>
 											 Usaré mi propio dominio (sin costo).
 										</label>
-										<input type="text" class="">
+										<input type="text" id="own_domain_input" class="own_domain">
 										<p class="detail_lines">El periodo de prueba no incluye dominio pero podrás usar cualquier dominio que tengas.</p>
 									</div>
 
@@ -72,14 +72,14 @@
 										</label>
 
 										<div class="input_domain_wrapper">
-											<input type="text"><p>.com</p><span class="domain_available_check"><img src="img/icon_domain_available.svg"></span><!--Solo visible si está dispoonible el dominio-->
+											<input type="text" id="comprar_dominio_input"><p>.com</p><span class="domain_available_check"><img src="img/icon_domain_available.svg"></span><!--Solo visible si está dispoonible el dominio-->
 										</div>
 										<div class="products_btns_wrapper verificar_dominio_wrapper">
 											<a class="main_btn transparent_btn tag-validar-disponibilidad" href="">Validar disponibilidad</a>
 										</div>
 
 										<div class="legales_planes legales_dominio">
-											<p class="legal_lines">El cobro del dominio se hará de inmediato con vigencia de 12 meses a partir de registro. Al finalizar el periodo de prueba el 09/04/2021 se aplicará el cobro recurrente de tu plan por $16.600 CLP/mensual. Podrás cancelar en cualquier momento.</p>
+											<p class="legal_lines">El cobro del dominio por $8.500 CLP se hará de inmediato y tendrá una vigencia de 12 meses. Luego del período de prueba, al contratar el plan, el costo del dominio estará incluido.</p>
 											<figure><img src="img/pay_with_ebanx.png"></figure>
 										</div>
 
@@ -91,9 +91,8 @@
 
 								</div>
 
-								<div class="products_btns_wrapper double_btns">
-										<a class="main_btn orange_btn tag-regresar" href="">Regresar</a>
-										<a id="show_payment_modal" class="main_btn transparent_btn tag-pagar-dominio" href="">Pagar dominio</a>
+								<div class="products_btns_wrapper mg_t_ato">
+										<a class="cambio_de_texto main_btn orange_btn tag-regresar disable_btn" href="">Comienza período de prueba</a>
 								</div>
 
 							</div>
@@ -122,7 +121,7 @@
 			<div class="modal_inner_container">
 				<img class="close_popup" src="img/close_popup.svg">
 				<div class="item_title">Pagar ahora</div>
-				<p class="modal_text">Se hará el cobro inmediato por </br><span>$8.500 CLP</span> en la tarjeta <strong>xxxxxxxxxx1234</strong> y razón social <strong>Mi tiendita SA de CV</strong></p>
+				<p class="modal_text">Se hará el cobro inmediato por <strong>Plan Mensual</strong> por </br><span>$8.500 CLP</span> en la tarjeta <strong>xxxxxxxxxx1234</strong> y razón social <strong>Mi tiendita SA de CV</strong></p>
 				<p> <a href="#" class="tag-cambiar-datos-de-pago">Cambiar datos de pago</a> o <a href="#" class="tag-facturacion">facturación</a></p>
 				<div class="products_btns_wrapper double_btns">
 						<a class="main_btn transparent_btn tag-regresar" href="">Regresar</a>

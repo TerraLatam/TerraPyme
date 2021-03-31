@@ -13,7 +13,7 @@ $(document).ready(function(){
     event.preventDefault();
     $('body').addClass('popupOpen')
   })
-  //HABILITAR COMPROBACIÓN DE DOMINIO AL SELECCIONAR DOMINIO
+  //HABILITAR COMPROBACIÓN DE DOMINIO AL SELECCIONAR DOMINIO terra-pyme-payments-domains.html
   $('#comprar_dominio').click(function(){
     if (!$("#comprar_dominio").is(':checked')) {
        $('.contratar_dominio').addClass('input_disabled');
@@ -23,6 +23,7 @@ $(document).ready(function(){
        $('.contratar_dominio').removeClass('input_disabled');
        $('.legales_dominio').css('display','grid');
        $('.dominio_propio').addClass('input_disabled');
+       $('.cambio_de_texto').text('Pagar dominio y comenzar período de prueba');
     }
   });
   $('#dominio_propio').click(function(){
@@ -30,12 +31,18 @@ $(document).ready(function(){
        $('.contratar_dominio').addClass('input_disabled');
        $('.dominio_propio').removeClass('input_disabled');
        $('.legales_dominio').hide();
+       $('.cambio_de_texto').text('Comienza período de prueba');
     }
     else {
        $('.contratar_dominio').removeClass('input_disabled');
        $('.legales_dominio').css('display','grid');
     }
   });
+
+//HABILITAR BOTON AL TECLEAR DOMINIO  terra-pyme-payments-domains.html
+  $('#own_domain_input, #comprar_dominio_input').keyup(function(){
+    $('.disable_btn').removeClass('disable_btn');
+  })
 
   //GENERAR CONTRASEÑA: show-hide password
   //terra-pyme-products-crear-buzon.html
