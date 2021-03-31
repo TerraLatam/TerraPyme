@@ -531,7 +531,8 @@ button.button_flat {
 .single_column form {
   display: flex;
   flex-direction: column;
-  justify-content: space-between; }
+  justify-content: space-between;
+  height: 100%; }
 
 .full_height form {
   height: 100%;
@@ -784,6 +785,60 @@ button.button_flat {
 
 .popupOpen .full_screen_modal {
   display: flex; }
+
+.no_padding {
+  padding: 0; }
+
+.payment_contratar {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: 15px;
+  width: 90%;
+  left: 0;
+  right: 0;
+  margin: auto; }
+
+.payment_contratar_info {
+  font-size: 1.1rem;
+  font-weight: 300;
+  margin: 5px 0;
+  position: absolute;
+  z-index: 1;
+  color: #FFFFFF;
+  bottom: 15px;
+  width: 90%;
+  left: 0;
+  right: 0;
+  margin: auto; }
+
+.min_height_50 {
+  min-height: 50vh; }
+
+.products_btns_wrapper.fixed_btn {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  right: 15px;
+  width: calc(100% - 30px); }
+
+.sello_buzones {
+  position: absolute;
+  left: -20px;
+  top: 30%;
+  z-index: 1; }
+
+.dominio_propio input[type=text] {
+  padding: 10px;
+  height: 40px;
+  border: 1px solid grey;
+  border-radius: 10px;
+  margin-left: 20px;
+  width: calc(100% - 20px);
+  margin-top: 10px;
+  margin-bottom: 10px; }
 
 main .min_heigh {
   min-height: calc(100vh - 136px); }
@@ -2631,14 +2686,14 @@ figure {
 
 .packages_wrapper {
   display: grid;
-  grid-template-columns: 7fr 4fr;
+  grid-template-columns: 4fr 4fr;
   grid-gap: 25px;
   width: 100%;
   padding: 50px 0 0; }
   .packages_wrapper .list_title {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-weight: 600;
-    margin: 15px 0; }
+    margin: 5px 0; }
   .packages_wrapper ul li {
     list-style-type: none;
     line-height: 2em; }
@@ -2685,7 +2740,7 @@ figure {
 .products_btns_wrapper {
   display: flex;
   width: 100%;
-  margin: 25px 0 0 0;
+  margin: 15px 0 0 0;
   flex-direction: row;
   justify-content: space-between;
   align-items: center; }
@@ -2704,7 +2759,7 @@ figure {
 
 .product_col_2 {
   display: grid;
-  grid-template-columns: 4fr 5fr;
+  grid-template-columns: 4fr 6fr;
   grid-gap: 15px; }
 
 .product_cont_img {
@@ -2733,13 +2788,14 @@ figure {
   border-radius: 8px;
   display: flex;
   flex-direction: row;
-  align-items: center; }
+  align-items: center;
+  margin: 10px 0; }
   .red_tab p {
     font-weight: 200;
-    font-size: 1.4em;
+    font-size: 1.2em;
     margin: 0; }
   .red_tab img {
-    max-width: 160px;
+    max-width: 100px;
     margin-right: 8px; }
 
 .home_legal {
@@ -2748,7 +2804,7 @@ figure {
   line-height: 1.6em; }
 
 .home_product ul {
-  margin: 15px 0; }
+  margin: 5px 0; }
 
 .product_cont_data {
   display: flex;

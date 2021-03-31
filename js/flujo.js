@@ -22,11 +22,13 @@ $(document).ready(function(){
     else {
        $('.contratar_dominio').removeClass('input_disabled');
        $('.legales_dominio').css('display','grid');
+       $('.dominio_propio').addClass('input_disabled');
     }
   });
   $('#dominio_propio').click(function(){
     if (!$("#comprar_dominio").is(':checked')) {
        $('.contratar_dominio').addClass('input_disabled');
+       $('.dominio_propio').removeClass('input_disabled');
        $('.legales_dominio').hide();
     }
     else {
