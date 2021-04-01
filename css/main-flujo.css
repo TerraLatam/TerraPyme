@@ -2446,7 +2446,7 @@ a.active_orange_btn {
 
 .disable_btn {
   pointer-events: none;
-  opacity: 0.5; }
+  opacity: 0.3; }
 
 @media (max-width: 769px) {
   .orange_border::after {
