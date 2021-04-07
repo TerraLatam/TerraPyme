@@ -813,7 +813,8 @@ button.button_flat {
 .tables_container table th {
   font-size: 0.85em;
   letter-spacing: 0.1em;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  display: inline-block; }
 @media screen and (max-width: 1266px) {
   .tables_container table {
     border: 0; }
@@ -880,13 +881,21 @@ button.button_flat {
   background-color: #F0C85B; }
 
 .grey_dot {
-  background-color: #4A4A4A; }
+  background-color: #717171; }
 
 .green_dot {
   background-color: #6EC4A2; }
 
+.outline_green_dot {
+  background-color: #ffffff;
+  border: 2px solid #6EC4A2; }
+
 .red_dot {
   background-color: #ff0000; }
+
+.outline_grey_dot {
+  background-color: #ffffff;
+  border: 2px solid #717171; }
 
 .icons_table_wrapper .table_icons.grey_bck {
   background-color: #bfbfbf;
@@ -907,13 +916,14 @@ button.button_flat {
       .tables_container table thead tr {
         background-color: #707070; }
         .tables_container table thead tr th:nth-child(1) {
-          width: 220px; }
+          width: 215px;
+          padding-left: 30px; }
         .tables_container table thead tr th:nth-child(2) {
           width: 215px; }
         .tables_container table thead tr th:nth-child(3) {
           width: 120px; }
         .tables_container table thead tr th:nth-child(4) {
-          width: 120px; }
+          width: 115px; }
         .tables_container table thead tr th:nth-child(5) {
           width: 175px; }
         .tables_container table thead tr th:nth-child(6) {
@@ -938,7 +948,8 @@ button.button_flat {
   .listado_autorizante.tables_container table thead tr {
     background-color: #707070; }
     .listado_autorizante.tables_container table thead tr th:nth-child(1) {
-      width: 220px; }
+      width: 220px;
+      padding-left: 30px; }
     .listado_autorizante.tables_container table thead tr th:nth-child(2) {
       width: 260px; }
     .listado_autorizante.tables_container table thead tr th:nth-child(3) {
@@ -946,9 +957,9 @@ button.button_flat {
     .listado_autorizante.tables_container table thead tr th:nth-child(4) {
       width: 120px; }
     .listado_autorizante.tables_container table thead tr th:nth-child(5) {
-      width: 190px; }
+      width: 180px; }
     .listado_autorizante.tables_container table thead tr th:nth-child(6) {
-      width: 190px; }
+      width: 180px; }
     .listado_autorizante.tables_container table thead tr th:nth-child(7) {
       width: 80px; }
   .listado_autorizante.tables_container table tbody tr td:nth-child(1) {
