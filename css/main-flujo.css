@@ -2574,6 +2574,16 @@ a.active_orange_btn {
     line-height: 1;
     height: 20px; }
 
+body {
+  background-color: #f2f2f2; }
+
+.forma-de-contacto-iframe .contact_form {
+  background-color: #f2f2f2; }
+.forma-de-contacto-iframe .btn_disable {
+  pointer-events: none;
+  cursor: not-allowed;
+  opacity: 0.5; }
+
 * {
   -webkit-transition: all 400ms cubic-bezier(0.7, 0, 0.3, 1) 0ms;
   -moz-transition: all 400ms cubic-bezier(0.7, 0, 0.3, 1) 0ms;
@@ -3149,5 +3159,75 @@ footer {
 
   .red_tab p {
     font-size: 0.9em; } }
+.forms_container.forms_container_left h2.black_config {
+  color: #000000;
+  font-weight: bold; }
+
+.inner_container.box.the_title_page.config_inline {
+  flex-direction: row; }
+  .inner_container.box.the_title_page.config_inline .form-group {
+    margin: 0;
+    font-weight: 400; }
+  .inner_container.box.the_title_page.config_inline a.btn_disable {
+    pointer-events: none;
+    cursor: not-allowed;
+    opacity: 0.5; }
+
+.config_devices .max_w_70 {
+  max-width: 60%;
+  margin: auto;
+  margin-bottom: 25px; }
+.config_devices .max_w_70_last {
+  max-width: 60%;
+  margin: auto;
+  margin-top: 25px; }
+  .config_devices .max_w_70_last a {
+    color: #FF7045; }
+.config_devices .config_btns_container .contact_form {
+  margin: auto; }
+  .config_devices .config_btns_container .contact_form .btn_config {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    width: 100%;
+    min-width: 100%;
+    display: block; }
+
+.forms_container.forms_container_left {
+  align-items: flex-start;
+  justify-content: flex-start; }
+  .forms_container.forms_container_left h2 {
+    color: #FF7045; }
+
+.forms_container p a {
+  color: #FF7045; }
+.forms_container img {
+  max-width: 90%; }
+.forms_container .main_button {
+  margin: 50px 0;
+  min-width: 220px;
+  text-align: center; }
+
+@media (max-width: 992px) {
+  .forms_container img {
+    max-width: 100%; } }
+@media (max-width: 769px) {
+  .config_devices .max_w_70 {
+    max-width: 90%; }
+  .config_devices .max_w_70_last {
+    max-width: 90%; } }
+@media (max-width: 576px) {
+  .inner_container.box.the_title_page.config_inline {
+    flex-direction: column;
+    line-height: 60px; }
+    .inner_container.box.the_title_page.config_inline .form-group a {
+      width: 100%;
+      display: block;
+      max-width: 100%;
+      line-height: 40px;
+      text-align: center;
+      margin: 0;
+      margin-bottom: 8px;
+      margin-top: 8px; } }
 
 /*# sourceMappingURL=main-flujo.css.map */
