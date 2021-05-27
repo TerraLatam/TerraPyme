@@ -2448,6 +2448,17 @@ a.active_orange_btn {
   pointer-events: none;
   opacity: 0.3; }
 
+.buzon_container.empty_buzon_container {
+  background: transparent;
+  border: 1px solid #D1D1D1;
+  min-height: 142px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #707070; }
+  .buzon_container.empty_buzon_container p {
+    text-transform: uppercase; }
+
 @media (max-width: 769px) {
   .orange_border::after {
     left: 50%;
@@ -2930,6 +2941,15 @@ figure {
   border: 1px solid #FF7045;
   color: #FF7045; }
 
+.transparent_white_btn {
+  background-color: transparent;
+  background-image: linear-gradient(100deg, #FFFFFF 50%, rgba(0, 0, 0, 0) 50%);
+  border: 1px solid #FFFFFF;
+  color: #FFFFFF; }
+
+.transparent_white_btn:hover {
+  color: #FF7045; }
+
 .transparent_btn:hover {
   color: #FFFFFF; }
 
@@ -3127,7 +3147,11 @@ footer {
   .red_tab p {
     font-size: 1.1em; }
   .red_tab img {
-    max-width: 100px; } }
+    max-width: 100px; }
+
+  .footer_content .footer_links {
+    flex-direction: column;
+    align-items: center; } }
 @media (max-width: 375px) {
   footer {
     height: auto; }
