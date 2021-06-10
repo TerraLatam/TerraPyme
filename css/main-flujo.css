@@ -2357,6 +2357,18 @@ footer {
   left: -16px;
   top: 50%; }
 
+.white_border {
+  border: 2px solid #FFFFFF;
+  position: relative; }
+
+.white_border::after {
+  content: url(../img/white_triangle.svg);
+  width: 12px;
+  height: 20px;
+  position: absolute;
+  left: -16px;
+  top: 50%; }
+
 .fieldset_double {
   padding: 0.35em 0 0.75em; }
   .fieldset_double div {
@@ -2454,14 +2466,32 @@ a.active_orange_btn {
   .buzon_container.empty_buzon_container p {
     text-transform: uppercase; }
 
+.my_flex_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #EEEEEE; }
+
+.main_seccion.main_section_1fr_2fr {
+  grid-template-columns: 1fr 2fr;
+  margin-bottom: 25px; }
+
 @media (max-width: 769px) {
   .orange_border::after {
     left: 50%;
     top: -20px;
     transform: rotateZ(90deg); }
 
+  .white_border::after {
+    left: 50%;
+    top: -20px;
+    transform: rotateZ(90deg); }
+
   .justify_start .div_remain_bottom {
-    margin-top: 20px; } }
+    margin-top: 20px; }
+
+  .main_seccion.main_section_1fr_2fr {
+    grid-template-columns: 1fr; } }
 .cancel_suscription {
   margin-top: 20px; }
 
