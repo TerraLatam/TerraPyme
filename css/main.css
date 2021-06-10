@@ -903,6 +903,14 @@ button.button_flat {
   -moz-transition: none;
   transition: none; }
 
+.registro-existente .main_button {
+  max-width: 210px; }
+.registro-existente p a {
+  color: #FF7045; }
+
+.message_screen.registro-existente .form_center_wrapper {
+  max-width: 410px; }
+
 @media screen and (min-width: 1266px) {
   .tables_container table {
     border: 1px solid #ccc;
