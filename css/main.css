@@ -1621,6 +1621,7 @@ footer {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  justify-content: flex-start;
   color: #FFFFFF;
   font-size: 0.8em;
   height: 100%; }
@@ -1633,9 +1634,13 @@ footer {
     color: #FFFFFF; }
 
 .footer_links a {
-  padding: 0 20px; }
+  padding: 0 20px;
+  color: #FF7212; }
 .footer_links a:last-child {
   padding-right: 0; }
+
+.footer_links {
+  margin-left: 24px; }
 
 .the_title_page {
   text-align: left;
@@ -1665,7 +1670,28 @@ footer {
     font-size: 1.6; }
 
   .p_footer_section {
-    font-size: 1em; } }
+    font-size: 1em; }
+
+  .footer_content .footer_links {
+    flex-direction: column;
+    flex-direction: row;
+    text-align: center;
+    width: 100%;
+    justify-content: center; }
+
+  footer {
+    padding-bottom: 50px;
+    height: auto; }
+
+  .footer_content {
+    flex-direction: column;
+    padding: 5px 0; }
+
+  .footer_links a {
+    padding: 0 10px; }
+
+  .footer_links {
+    margin-left: 0; } }
 @media (max-width: 769px) {
   .funciona_section {
     flex-direction: column; }
@@ -1682,8 +1708,18 @@ footer {
 
   .footer_content .footer_links {
     flex-direction: column;
+    flex-direction: row;
     text-align: center;
-    width: 100%; } }
+    width: 100%;
+    justify-content: center; }
+
+  footer {
+    padding-bottom: 50px;
+    height: auto; }
+
+  .footer_content {
+    flex-direction: column;
+    padding: 5px 0; } }
 @media (max-width: 576px) {
   .header_cont_logo figure img {
     width: 90px; }
