@@ -333,6 +333,7 @@ footer
   flex-direction: row
   align-items: center
   justify-content: space-between
+  justify-content: flex-start
   color: $white
   font-size: .8em
   height: 100%
@@ -346,8 +347,11 @@ footer
 .footer_links
   a
     padding: 0 20px
+    color: #FF7212
   a:last-child
     padding-right: 0
+.footer_links
+  margin-left: 24px
 
 //TERMINOS
 .the_title_page
@@ -421,6 +425,23 @@ footer
       font-size: 1.1em
     img
       max-width: 130px
+  .footer_content
+    .footer_links
+      flex-direction: column
+      flex-direction: row
+      text-align: center
+      width: 100%
+      justify-content: center
+  footer
+    padding-bottom: 50px
+    height: auto
+  .footer_content
+    flex-direction: column
+    padding: 5px 0
+  .footer_links a
+    padding: 0 10px
+  .footer_links
+    margin-left: 0
 
 @media (max-width: $screen-md-min)
   .funciona_section
@@ -501,6 +522,23 @@ footer
     .footer_links
       flex-direction: column
       align-items: center
+  .footer_content
+    .footer_links
+      flex-direction: column
+      flex-direction: row
+      text-align: center
+      width: 100%
+      justify-content: center
+  footer
+    padding-bottom: 50px
+    height: auto
+  .footer_content
+    flex-direction: column
+    padding: 5px 0
+  .footer_links a
+    padding: 0 10px
+  .footer_links
+    margin-left: 0
 
 
 @media (max-width: $screen-xsm-min)
