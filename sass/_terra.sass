@@ -452,6 +452,25 @@ footer
   a:last-child
     padding-right: 0
 
+.header_whats_icon
+  position: fixed
+  right: 77px
+  bottom: 110px
+  z-index: 4
+  .my-float
+    position: fixed
+    width: 60px
+    height: 60px
+    background-color: #25d366
+    color: #FFF
+    border-radius: 50px
+    text-align: center
+    font-size: 35px
+    /*box-shadow: 2px 2px 3px #999*/
+    line-height: 60px
+.header_whats_icon.nearBottom
+  bottom: 185px
+
 //TERMINOS
 .the_title_page
   text-align: left
@@ -495,6 +514,9 @@ footer
   .home_seccion_productos
     width: 100%
     grid-template-columns: 1fr
+  .header_whats_icon
+    right: 77px
+    bottom: 145px
 
 @media (max-width: $screen-sm-min)
   .header_cont_logo
@@ -538,5 +560,9 @@ footer
   .full_screen_modal
     .modal_inner_container
       max-width: 300px
+  .footer_content
+    .footer_links
+      line-height: 1.4em
+      margin-top: 10px
 
 @media (max-width: $screen-xxsm-min)

@@ -220,3 +220,11 @@ function closeAllSelect(elmnt) {
 }
 
 document.addEventListener("click", closeAllSelect);
+
+/*$(window).scroll(function() {
+  if($(window).scrollTop() + $(window).height() > $(document).height() - 100) {
+      $('.header_whats_icon').addClass('nearBottom');
+  }else{
+    $('.header_whats_icon').removeClass('nearBottom');
+  }
+});*/

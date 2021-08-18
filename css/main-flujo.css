@@ -2259,6 +2259,26 @@ footer {
 .footer_links a:last-child {
   padding-right: 0; }
 
+.header_whats_icon {
+  position: fixed;
+  right: 77px;
+  bottom: 110px;
+  z-index: 4; }
+  .header_whats_icon .my-float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    background-color: #25d366;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 35px;
+    /*box-shadow: 2px 2px 3px #999 */
+    line-height: 60px; }
+
+.header_whats_icon.nearBottom {
+  bottom: 185px; }
+
 .the_title_page {
   text-align: left;
   line-height: 90px;
@@ -2300,7 +2320,11 @@ footer {
 
   .home_seccion_productos {
     width: 100%;
-    grid-template-columns: 1fr; } }
+    grid-template-columns: 1fr; }
+
+  .header_whats_icon {
+    right: 77px;
+    bottom: 145px; } }
 @media (max-width: 576px) {
   .header_cont_logo figure img {
     width: 90px; }
@@ -2344,7 +2368,11 @@ footer {
     padding: 8px 10px; }
 
   .full_screen_modal .modal_inner_container {
-    max-width: 300px; } }
+    max-width: 300px; }
+
+  .footer_content .footer_links {
+    line-height: 1.4em;
+    margin-top: 10px; } }
 .orange_border {
   border: 2px solid #FF7045;
   position: relative; }
