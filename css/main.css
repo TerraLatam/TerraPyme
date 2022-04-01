@@ -238,6 +238,16 @@ ul {
   padding: 0;
   margin: 0; }
 
+/*.logo_scotia {
+  width: 15%; }*/
+
+/*.beneficios{
+  width: 200%; }*/
+
+.recibe_gratis{
+  font-size: 15px;
+  }
+
 .fw {
   display: block;
   position: relative;
@@ -1106,6 +1116,13 @@ body.lightbox_opened {
 h2 {
   font-weight: 400; }
 
+  h3{
+  font-weight: 600;
+  font-size: 20px;
+  color: white; 
+  margin-top:-10px;
+  margin-bottom: 10px;}
+
 header {
   background-color: #FFFFFF;
   border-bottom: 1px solid #e4e4e4;
@@ -1242,12 +1259,12 @@ header {
   position: absolute;
   left: 40px;
   bottom: 0;
-  padding: 15px 30px;
-  background-color: #FFFFFF;
+  padding: 10px 10px;
+  background-color: #FF7045;
   border-radius: 5px 5px 0 0;
   margin: 0; }
   .scb_logo img {
-    width: 112px; }
+    width: 250px; }
 
 .home_white_section {
   background-color: #FFFFFF;
@@ -1749,12 +1766,13 @@ footer {
     width: 90px; }
 
   .main_slide_content {
-    padding: 5rem 0; }
+    padding: 2rem 0 4rem;}
 
   .scb_logo {
     left: 0; }
-    .scb_logo img {
-      width: 95px; }
+  
+  .scb_logo img {
+      width: 220px; }
 
   .main_slide_content h1 {
     font-size: 1.9em; }
